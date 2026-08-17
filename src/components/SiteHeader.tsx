@@ -81,7 +81,7 @@ export function SiteHeader() {
               activeProps={{ className: "text-primary after:scale-x-100" }}
               className="relative px-3 py-2 text-sm font-medium text-foreground/80 transition-colors after:absolute after:inset-x-3 after:bottom-1 after:h-[2px] after:origin-left after:scale-x-0 after:bg-gold after:transition-transform hover:text-primary hover:after:scale-x-100"
             >
-              {item.label === "Dove siamo e prossimi concerti" ? "Prossimi concerti" : item.label}
+              <span className="whitespace-nowrap">{shortLabel(item.label)}</span>
             </Link>
           ))}
           {secondary.length > 0 ? (
