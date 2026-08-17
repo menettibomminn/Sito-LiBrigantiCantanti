@@ -40,16 +40,16 @@ function HomePage() {
           alt="Il coro durante un'esibizione in una chiesa storica"
           width={1920}
           height={1088}
-          className="absolute inset-0 size-full object-cover opacity-60"
+          className="absolute inset-0 size-full object-cover opacity-80"
         />
         <div
-          className="absolute inset-0 bg-gradient-to-t from-ink via-ink/65 to-ink/25"
+          className="absolute inset-0 bg-ink/55"
           aria-hidden="true"
         />
         <div className="relative mx-auto w-full max-w-6xl px-4 pb-16 pt-28 sm:px-6 sm:pb-24">
-          <p className="text-xs font-extrabold uppercase tracking-wide text-gold">{site.tagline}</p>
-          <h1 className="mt-4 max-w-3xl font-[family-name:var(--font-display)] text-5xl leading-[1.05] text-ink-foreground sm:text-6xl md:text-7xl">
-            {site.name}
+          <p className="sticker">{site.name}</p>
+          <h1 className="mt-4 max-w-3xl font-[family-name:var(--font-display)] text-4xl leading-[1.1] text-ink-foreground sm:text-5xl md:text-6xl">
+            Cantiamo insieme da tanti anni
           </h1>
           <p className="mt-6 max-w-xl text-lg leading-relaxed text-ink-foreground/85">
             {site.claim}
@@ -59,7 +59,7 @@ function HomePage() {
               to="/chi-siamo"
               className="inline-flex items-center justify-center gap-2 rounded-full bg-gold px-6 py-3.5 text-base font-bold text-gold-foreground transition-colors hover:bg-gold/90"
             >
-              Scopri il coro
+              Conosciamoci
               <ArrowRight className="size-4" aria-hidden="true" />
             </Link>
             <Link
@@ -78,15 +78,15 @@ function HomePage() {
           <div>
             <SectionHeading
               eyebrow="Chi siamo"
-              title="Un coro nato tra le colline dell'Appennino"
+              title="Siamo un coro di paese"
               description={site.shortDescription}
             />
             <div className="prose-warm mt-6 max-w-xl">
               <p>
-                Ci ritroviamo ogni settimana per provare, studiare nuovi brani e coltivare
-                un'amicizia che dura da anni. Cantiamo nelle chiese, nei teatri e nelle piazze dei
-                nostri paesi, portando un repertorio che intreccia musica sacra, canti popolari e
-                pagine d'autore.
+                Ci troviamo ogni settimana per le prove: si impara qualche brano nuovo, si ride
+                un po' e alla fine si finisce spesso a chiacchierare. Durante l'anno cantiamo nelle
+                chiese, nelle sale del paese e alle feste del territorio. Il nostro repertorio mette
+                insieme canti popolari, brani sacri e qualche pezzo che ci è entrato nel cuore.
               </p>
             </div>
             <Link
@@ -104,7 +104,7 @@ function HomePage() {
               loading="lazy"
               width={1280}
               height={960}
-              className="w-full object-cover"
+              className="w-full rounded-xl object-cover"
             />
             <figcaption className="mt-3 text-xs text-muted-foreground">
               Le prove settimanali del coro.
@@ -173,7 +173,7 @@ function HomePage() {
                   to="/dove-siamo-e-prossimi-concerti"
                   className="mt-9 inline-flex items-center gap-2 rounded-full bg-gold px-6 py-3 text-base font-bold text-gold-foreground transition-colors hover:bg-gold/90"
                 >
-                  Tutti i concerti
+                  Vieni a sentirci
                   <ArrowRight className="size-4" aria-hidden="true" />
                 </Link>
               </div>
@@ -184,7 +184,7 @@ function HomePage() {
                   loading="lazy"
                   width={1280}
                   height={960}
-                  className="aspect-[4/3] w-full object-cover"
+                  className="aspect-[4/3] w-full rounded-xl object-cover"
                 />
               ) : null}
             </div>
@@ -197,7 +197,7 @@ function HomePage() {
         <SectionHeading
           eyebrow="Archivio"
           title="Gli ultimi concerti"
-          description="Alcune delle serate più recenti tra chiese, teatri e piazze del nostro Appennino."
+          description="Qualche serata delle ultime stagioni, tra chiese di montagna, sale parrocchiali e piazze di paese."
         />
         <ul className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {latest.map((c) => (
@@ -220,19 +220,19 @@ function HomePage() {
         <div className="mx-auto max-w-6xl px-4 py-20 sm:px-6 sm:py-24">
           <SectionHeading
             eyebrow="Galleria"
-            title="Immagini di concerti e di prove"
-            description="Una piccola selezione dal nostro archivio fotografico."
+            title="Foto di concerti e di prove"
+            description="Qualche foto scattata da noi, senza troppe pretese."
           />
           <ul className="mt-12 grid grid-cols-2 gap-3 sm:gap-4 lg:grid-cols-3">
             {preview.map((p) => (
-              <li key={p.id} className="overflow-hidden">
+              <li key={p.id} className="overflow-hidden rounded-xl">
                 <img
                   src={p.src}
                   alt={p.alt}
                   loading="lazy"
                   width={1280}
                   height={960}
-                  className="aspect-[4/3] w-full object-cover transition-transform duration-500 hover:scale-[1.05]"
+                  className="aspect-[4/3] w-full rounded-xl object-cover transition-transform duration-300 hover:scale-[1.03]"
                 />
               </li>
             ))}
@@ -251,8 +251,8 @@ function HomePage() {
       <section className="mx-auto max-w-6xl px-4 py-20 sm:px-6 sm:py-24">
         <SectionHeading
           eyebrow="News e curiosità"
-          title="Dalle nostre serate"
-          description="Racconti, curiosità sui brani e novità dalla vita del coro."
+          title="Il diario del coro"
+          description="Trasferte, incontri con altri cori, curiosità sui brani e piccole cose della vita del gruppo."
         />
         <ul className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {news.slice(0, 3).map((a) => (
@@ -264,8 +264,8 @@ function HomePage() {
       </section>
 
       <CtaSection
-        title="Vuoi conoscerci, ascoltarci o collaborare con noi?"
-        text="Scrivici per invitarci a un concerto, per organizzare una rassegna insieme oppure semplicemente per venire a cantare con noi durante una prova."
+        title="Ti va di cantare con noi?"
+        text="Scrivici due righe: per invitarci a cantare, per organizzare una serata insieme oppure per venire a una prova e vedere se ti piace. Non serve saper leggere la musica."
         buttonLabel="Contattaci"
         to="/contatti"
       />
