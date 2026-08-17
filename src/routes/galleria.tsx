@@ -65,7 +65,7 @@ function GalleriaPage() {
                     {...(v.url
                       ? { href: v.url, target: "_blank", rel: "noreferrer noopener" }
                       : {})}
-                    className="group flex h-full flex-col border border-border bg-card transition-shadow hover:shadow-[0_12px_30px_-18px_rgba(60,40,20,0.45)]"
+                    className="group flex h-full flex-col overflow-hidden rounded-xl border-2 border-border bg-card transition-all hover:-translate-y-0.5 hover:border-gold"
                   >
                     <div className="relative aspect-video overflow-hidden">
                       <img
@@ -87,7 +87,7 @@ function GalleriaPage() {
                       <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
                         {v.description}
                       </p>
-                      <p className="mt-4 text-xs font-semibold uppercase tracking-wider text-primary">
+                      <p className="mt-4 text-xs font-extrabold uppercase tracking-wider text-primary">
                         {v.url ? "Guarda il video" : "Video in arrivo"}
                       </p>
                     </div>

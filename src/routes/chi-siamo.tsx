@@ -31,7 +31,7 @@ function ChiSiamoPage() {
       <PageHero
         eyebrow="Chi siamo"
         title="La storia del nostro coro"
-        intro="Un gruppo di voci nato dall'amicizia e dal piacere di cantare insieme, cresciuto negli anni attorno alle comunità dell'Appennino."
+        intro="Il coro è nato per amicizia e per il piacere di cantare insieme, e da allora non abbiamo più smesso."
         image={group}
         imageAlt="I coristi insieme in una piazza di paese"
         breadcrumb={{ label: "Chi siamo" }}
@@ -66,7 +66,7 @@ function ChiSiamoPage() {
                   loading="lazy"
                   width={1024}
                   height={768}
-                  className="aspect-[4/3] w-full object-cover"
+                  className="aspect-[4/3] w-full rounded-xl object-cover"
                 />
                 <figcaption className="mt-2 text-xs text-muted-foreground">{img.alt}</figcaption>
               </figure>
@@ -80,19 +80,19 @@ function ChiSiamoPage() {
         <div className="mx-auto max-w-6xl px-4 py-20 sm:px-6 sm:py-24">
           <SectionHeading
             eyebrow="Il gruppo"
-            title="I reparti vocali"
-            description="Il coro è formato da quattro reparti. Gli elenchi dei componenti sono in aggiornamento."
+            title="Le nostre voci"
+            description="Siamo divisi in quattro voci. Gli elenchi dei coristi sono in aggiornamento: aggiungiamo i nomi appena possibile."
           />
           <div className="mt-12 grid gap-6 sm:grid-cols-2">
             {voiceSections.map((sec) => (
-              <article key={sec.id} className="border border-border bg-card p-6">
+              <article key={sec.id} className="rounded-xl border-2 border-border bg-card p-6">
                 <h3 className="font-[family-name:var(--font-display)] text-2xl text-primary">
                   {sec.name}
                 </h3>
                 <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
                   {sec.description}
                 </p>
-                <h4 className="mt-6 text-xs font-bold uppercase tracking-[0.16em] text-foreground/70">
+                <h4 className="mt-6 text-xs font-extrabold uppercase tracking-wide text-foreground/70">
                   Componenti
                 </h4>
                 <ul className="mt-3 divide-y divide-border border-t border-border">

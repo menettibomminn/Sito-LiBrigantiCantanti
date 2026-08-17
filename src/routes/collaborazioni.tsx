@@ -59,7 +59,7 @@ function CollaborazioniPage() {
                 <ul className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
                   {items.map((p) => (
                     <li key={p.id}>
-                      <article className="flex h-full flex-col border border-border bg-card p-6">
+                      <article className="flex h-full flex-col rounded-xl border-2 border-border bg-card p-6">
                         <div className="flex items-center gap-4">
                           {p.logo ? (
                             <img

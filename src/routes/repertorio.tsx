@@ -70,7 +70,7 @@ function RepertorioPage() {
                 >
                   {cat.name}
                 </h2>
-                <p className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">
+                <p className="text-xs font-extrabold uppercase tracking-wider text-muted-foreground">
                   {cat.pieces.length} brani
                 </p>
               </div>

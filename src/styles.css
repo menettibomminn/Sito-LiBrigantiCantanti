@@ -6,8 +6,9 @@
 
 /*
  * Design system — Coro Briganti Cantanti
- * Palette calda e classica: borgogna, verde bosco, oro, avorio.
- * Tutti i colori in oklch. Non usare colori hardcoded nei componenti.
+ * Tono: coro di paese. Semplice, caloroso, genuino.
+ * Palette: verde salvia, rosso mattone, giallo senape, crema.
+ * Tipografia arrotondata e amichevole. Niente colori hardcoded nei componenti.
  */
 
 @theme inline {
@@ -17,8 +18,8 @@
   --radius-xl: calc(var(--radius) + 4px);
   --radius-2xl: calc(var(--radius) + 8px);
   --radius-3xl: calc(var(--radius) + 12px);
-  --font-display: "Cormorant Garamond", "Iowan Old Style", Georgia, serif;
-  --font-sans: "Karla", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Baloo 2", "Trebuchet MS", ui-rounded, sans-serif;
+  --font-sans: "Nunito", ui-sans-serif, system-ui, sans-serif;
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-card: var(--card);
@@ -55,56 +56,57 @@
 }
 
 :root {
-  --radius: 0.25rem;
+  --radius: 0.85rem;
 
-  --background: oklch(0.982 0.011 84);
-  --foreground: oklch(0.235 0.021 40);
+  /* Crema / carta da locandina */
+  --background: oklch(0.968 0.023 92);
+  --foreground: oklch(0.29 0.035 65);
 
-  --card: oklch(0.995 0.006 90);
-  --card-foreground: oklch(0.235 0.021 40);
-  --popover: oklch(0.995 0.006 90);
-  --popover-foreground: oklch(0.235 0.021 40);
+  --card: oklch(0.992 0.012 92);
+  --card-foreground: oklch(0.29 0.035 65);
+  --popover: oklch(0.992 0.012 92);
+  --popover-foreground: oklch(0.29 0.035 65);
 
-  /* Borgogna */
-  --primary: oklch(0.39 0.115 20);
-  --primary-foreground: oklch(0.98 0.012 84);
+  /* Rosso mattone */
+  --primary: oklch(0.535 0.128 38);
+  --primary-foreground: oklch(0.985 0.015 92);
 
-  --secondary: oklch(0.945 0.02 82);
-  --secondary-foreground: oklch(0.32 0.05 30);
+  --secondary: oklch(0.935 0.032 110);
+  --secondary-foreground: oklch(0.34 0.05 60);
 
-  --muted: oklch(0.955 0.016 84);
-  --muted-foreground: oklch(0.482 0.026 45);
+  --muted: oklch(0.945 0.026 100);
+  --muted-foreground: oklch(0.485 0.03 70);
 
-  --accent: oklch(0.93 0.032 80);
-  --accent-foreground: oklch(0.32 0.06 30);
+  --accent: oklch(0.915 0.045 110);
+  --accent-foreground: oklch(0.33 0.05 60);
 
-  /* Oro */
-  --gold: oklch(0.735 0.108 78);
-  --gold-foreground: oklch(0.24 0.03 45);
+  /* Giallo senape */
+  --gold: oklch(0.795 0.135 85);
+  --gold-foreground: oklch(0.27 0.045 60);
 
-  /* Verde bosco */
-  --forest: oklch(0.335 0.052 148);
-  --forest-foreground: oklch(0.965 0.015 84);
+  /* Verde salvia scuro */
+  --forest: oklch(0.455 0.058 145);
+  --forest-foreground: oklch(0.975 0.02 100);
 
-  /* Fondo scuro editoriale */
-  --ink: oklch(0.235 0.023 40);
-  --ink-foreground: oklch(0.96 0.014 84);
+  /* Fondo scuro: verde bosco caldo */
+  --ink: oklch(0.325 0.045 150);
+  --ink-foreground: oklch(0.975 0.02 100);
 
-  --destructive: oklch(0.52 0.19 27);
-  --destructive-foreground: oklch(0.98 0.01 84);
+  --destructive: oklch(0.53 0.18 27);
+  --destructive-foreground: oklch(0.985 0.012 92);
 
-  --border: oklch(0.888 0.02 78);
-  --input: oklch(0.888 0.02 78);
-  --ring: oklch(0.39 0.115 20);
+  --border: oklch(0.875 0.03 100);
+  --input: oklch(0.875 0.03 100);
+  --ring: oklch(0.535 0.128 38);
 
-  --sidebar: oklch(0.965 0.015 84);
-  --sidebar-foreground: oklch(0.235 0.021 40);
-  --sidebar-primary: oklch(0.39 0.115 20);
-  --sidebar-primary-foreground: oklch(0.98 0.012 84);
-  --sidebar-accent: oklch(0.93 0.032 80);
-  --sidebar-accent-foreground: oklch(0.32 0.06 30);
-  --sidebar-border: oklch(0.888 0.02 78);
-  --sidebar-ring: oklch(0.39 0.115 20);
+  --sidebar: oklch(0.955 0.025 100);
+  --sidebar-foreground: oklch(0.29 0.035 65);
+  --sidebar-primary: oklch(0.535 0.128 38);
+  --sidebar-primary-foreground: oklch(0.985 0.015 92);
+  --sidebar-accent: oklch(0.915 0.045 110);
+  --sidebar-accent-foreground: oklch(0.33 0.05 60);
+  --sidebar-border: oklch(0.875 0.03 100);
+  --sidebar-ring: oklch(0.535 0.128 38);
 }
 
 @layer base {
@@ -124,24 +126,25 @@
   h3,
   h4 {
     font-family: var(--font-display);
-    font-weight: 600;
-    letter-spacing: -0.01em;
+    font-weight: 700;
+    letter-spacing: 0;
   }
 
   :focus-visible {
-    outline: 2px solid var(--color-primary);
+    outline: 3px solid var(--color-primary);
     outline-offset: 3px;
   }
 }
 
-/* Filetto decorativo sotto i titoli di sezione */
+/* Filetto sotto i titoli di sezione — semplice, un po' irregolare */
 @utility rule-gold {
   &::after {
     content: "";
     display: block;
-    width: 3.5rem;
-    height: 2px;
-    margin-top: 0.85rem;
+    width: 4rem;
+    height: 5px;
+    margin-top: 0.7rem;
+    border-radius: 999px;
     background-color: var(--color-gold);
   }
 }
@@ -150,19 +153,20 @@
   &::after {
     content: "";
     display: block;
-    width: 3.5rem;
-    height: 2px;
-    margin: 0.85rem auto 0;
+    width: 4rem;
+    height: 5px;
+    margin: 0.7rem auto 0;
+    border-radius: 999px;
     background-color: var(--color-gold);
   }
 }
 
-/* Occhiello in maiuscoletto spaziato */
+/* Occhiello semplice, senza spaziature da brochure */
 @utility eyebrow {
   font-family: var(--font-sans);
-  font-size: 0.75rem;
-  font-weight: 700;
-  letter-spacing: 0.18em;
+  font-size: 0.8rem;
+  font-weight: 800;
+  letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--color-primary);
 }
@@ -170,10 +174,35 @@
 @utility prose-warm {
   & p {
     margin-bottom: 1rem;
-    line-height: 1.75;
+    line-height: 1.8;
     color: var(--color-muted-foreground);
   }
   & p:last-child {
     margin-bottom: 0;
+  }
+}
+
+/* Etichetta tipo adesivo/locandina */
+@utility sticker {
+  display: inline-block;
+  border-radius: 999px;
+  padding: 0.3rem 0.8rem;
+  font-size: 0.8rem;
+  font-weight: 800;
+  background-color: var(--color-gold);
+  color: var(--color-gold-foreground);
+}
+
+/* Card semplice con bordo un po' spesso, tipo cartoncino */
+@utility card-paper {
+  border-radius: var(--radius);
+  border: 2px solid var(--color-border);
+  background-color: var(--color-card);
+  transition:
+    transform 0.2s ease,
+    border-color 0.2s ease;
+  &:hover {
+    border-color: var(--color-gold);
+    transform: translateY(-2px);
   }
 }

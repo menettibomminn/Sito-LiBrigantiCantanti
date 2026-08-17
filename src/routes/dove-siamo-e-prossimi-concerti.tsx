@@ -59,30 +59,30 @@ function ProssimiConcertiPage() {
           <div className="mt-12 grid gap-10 lg:grid-cols-2">
             <div className="space-y-5">
               {site.venues.map((v) => (
-                <article key={v.name} className="border border-border bg-card p-6">
+                <article key={v.name} className="rounded-xl border-2 border-border bg-card p-6">
                   <h3 className="font-[family-name:var(--font-display)] text-xl text-foreground">
                     {v.name}
                   </h3>
                   <p className="mt-3 flex items-start gap-2 text-sm text-muted-foreground">
-                    <MapPin className="mt-0.5 size-4 shrink-0 text-gold" aria-hidden="true" />
+                    <MapPin className="mt-0.5 size-4 shrink-0 text-primary" aria-hidden="true" />
                     {v.address}
                   </p>
                   <p className="mt-2 text-sm text-muted-foreground">{v.note}</p>
                 </article>
               ))}
-              <article className="border border-border bg-card p-6">
+              <article className="rounded-xl border-2 border-border bg-card p-6">
                 <h3 className="font-[family-name:var(--font-display)] text-xl text-foreground">
                   Informazioni e contatti
                 </h3>
                 <ul className="mt-4 space-y-3 text-sm text-muted-foreground">
                   <li className="flex items-center gap-2">
-                    <Mail className="size-4 text-gold" aria-hidden="true" />
+                    <Mail className="size-4 text-primary" aria-hidden="true" />
                     <a href={`mailto:${site.email}`} className="hover:text-primary">
                       {site.email}
                     </a>
                   </li>
                   <li className="flex items-center gap-2">
-                    <Phone className="size-4 text-gold" aria-hidden="true" />
+                    <Phone className="size-4 text-primary" aria-hidden="true" />
                     <a href={`tel:${site.phone.replace(/\s/g, "")}`} className="hover:text-primary">
                       {site.phone}
                     </a>
@@ -92,7 +92,7 @@ function ProssimiConcertiPage() {
             </div>
 
             {/* Mappa: incollare l'URL di embed in site.mapsEmbedUrl */}
-            <div className="min-h-72 border border-border bg-card">
+            <div className="min-h-72 rounded-xl border-2 border-border bg-card">
               {site.mapsEmbedUrl ? (
                 <iframe
                   title="Mappa delle sedi del coro"
@@ -102,7 +102,7 @@ function ProssimiConcertiPage() {
                 />
               ) : (
                 <div className="flex h-full min-h-72 flex-col items-center justify-center gap-3 p-8 text-center">
-                  <MapPin className="size-8 text-gold" aria-hidden="true" />
+                  <MapPin className="size-8 text-primary" aria-hidden="true" />
                   <p className="font-[family-name:var(--font-display)] text-xl text-foreground">
                     Mappa in arrivo
                   </p>

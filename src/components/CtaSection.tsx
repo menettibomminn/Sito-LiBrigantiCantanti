@@ -31,8 +31,8 @@ export function CtaSection({ title, text, buttonLabel, to, variant = "dark" }: P
           to={to}
           className={
             dark
-              ? "inline-flex items-center justify-center bg-gold px-6 py-3 text-sm font-semibold text-gold-foreground transition-colors hover:bg-gold/90"
-              : "inline-flex items-center justify-center bg-primary px-6 py-3 text-sm font-semibold text-primary-foreground transition-colors hover:bg-primary/90"
+              ? "inline-flex items-center justify-center rounded-full bg-gold px-6 py-3 text-base font-bold text-gold-foreground transition-colors hover:bg-gold/90"
+              : "inline-flex items-center justify-center rounded-full bg-primary px-6 py-3 text-base font-bold text-primary-foreground transition-colors hover:bg-primary/90"
           }
         >
           {buttonLabel}

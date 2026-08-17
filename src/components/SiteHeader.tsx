@@ -75,11 +75,11 @@ export function SiteHeader() {
             </span>
             <span
               className={cn(
-                "block text-[0.7rem] uppercase tracking-[0.16em] text-muted-foreground",
+                "block text-[0.72rem] font-semibold text-muted-foreground",
                 compact && "hidden sm:block",
               )}
             >
-              Coro polifonico
+              Cantiamo insieme dal 1998
             </span>
           </span>
         </Link>
@@ -92,7 +92,7 @@ export function SiteHeader() {
               to={item.to}
               activeOptions={{ exact: item.to === "/" }}
               activeProps={{ className: "text-primary after:scale-x-100" }}
-              className="relative px-3 py-2 text-sm font-medium text-foreground/80 transition-colors after:absolute after:inset-x-3 after:bottom-1 after:h-[2px] after:origin-left after:scale-x-0 after:bg-gold after:transition-transform hover:text-primary hover:after:scale-x-100"
+              className="relative px-3 py-2 text-sm font-medium text-foreground/80 transition-colors after:absolute after:inset-x-3 after:bottom-1 after:h-[2px] after:origin-left after:scale-x-0 rounded-full after:bg-gold after:transition-transform hover:text-primary hover:after:scale-x-100"
             >
               <span className="whitespace-nowrap">{shortLabel(item.label)}</span>
             </Link>
@@ -106,13 +106,13 @@ export function SiteHeader() {
               >
                 Altro
               </button>
-              <div className="invisible absolute right-0 top-full w-64 border border-border bg-card p-2 opacity-0 shadow-lg transition-all group-focus-within:visible group-focus-within:opacity-100 group-hover:visible group-hover:opacity-100">
+              <div className="invisible absolute right-0 top-full w-64 rounded-xl border-2 border-border bg-card p-2 opacity-0 shadow-md transition-all group-focus-within:visible group-focus-within:opacity-100 group-hover:visible group-hover:opacity-100">
                 {secondary.map((item) => (
                   <Link
                     key={item.to}
                     to={item.to}
                     activeProps={{ className: "text-primary" }}
-                    className="block px-3 py-2 text-sm text-foreground/85 transition-colors hover:bg-secondary hover:text-primary"
+                    className="block px-3 py-2 text-sm text-foreground/85 transition-colors hover:bg-secondary hover:text-primary rounded-lg"
                   >
                     {item.label}
                   </Link>
@@ -122,7 +122,7 @@ export function SiteHeader() {
           ) : null}
           <Link
             to="/contatti"
-            className="ml-2 inline-flex items-center justify-center bg-primary px-4 py-2 text-sm font-semibold text-primary-foreground transition-colors hover:bg-primary/90"
+            className="ml-2 inline-flex items-center justify-center rounded-full bg-primary px-4 py-2 text-sm font-bold text-primary-foreground transition-colors hover:bg-primary/90"
           >
             Contatti
           </Link>

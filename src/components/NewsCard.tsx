@@ -5,7 +5,7 @@ import { formatNewsDate, type NewsArticle } from "@/data/news";
 
 export function NewsCard({ article }: { article: NewsArticle }) {
   return (
-    <article className="group flex h-full flex-col border border-border bg-card transition-shadow hover:shadow-[0_12px_30px_-18px_rgba(60,40,20,0.45)]">
+    <article className="group flex h-full flex-col overflow-hidden rounded-xl border-2 border-border bg-card transition-all hover:-translate-y-0.5 hover:border-gold">
       <div className="aspect-[16/10] overflow-hidden">
         <img
           src={article.image}
@@ -17,7 +17,7 @@ export function NewsCard({ article }: { article: NewsArticle }) {
         />
       </div>
       <div className="flex flex-1 flex-col p-5">
-        <time dateTime={article.date} className="text-xs font-semibold uppercase tracking-[0.14em] text-primary">
+        <time dateTime={article.date} className="text-xs font-extrabold uppercase tracking-wide text-primary">
           {formatNewsDate(article.date)}
         </time>
         <h3 className="mt-2 font-[family-name:var(--font-display)] text-xl leading-snug text-foreground">
