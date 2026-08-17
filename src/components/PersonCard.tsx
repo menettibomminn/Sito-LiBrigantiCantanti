@@ -15,7 +15,7 @@ export function PersonCard({ name, role, bio, image, imageAlt }: Props) {
         loading="lazy"
         width={480}
         height={480}
-        className="h-56 w-full shrink-0 object-cover sm:size-40"
+        className="h-56 w-full shrink-0 rounded-xl object-cover sm:size-40"
       />
       <div>
         <h3 className="font-[family-name:var(--font-display)] text-2xl text-foreground">{name}</h3>

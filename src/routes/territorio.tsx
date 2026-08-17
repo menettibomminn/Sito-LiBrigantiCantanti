@@ -56,7 +56,7 @@ function TerritorioPage() {
                     loading="lazy"
                     width={1280}
                     height={960}
-                    className="aspect-[4/3] w-full object-cover"
+                    className="aspect-[4/3] w-full rounded-xl object-cover"
                   />
                   <figcaption className="mt-2 text-xs text-muted-foreground">
                     {sec.image.alt}

@@ -66,7 +66,7 @@ function ChiSiamoPage() {
                   loading="lazy"
                   width={1024}
                   height={768}
-                  className="aspect-[4/3] w-full object-cover"
+                  className="aspect-[4/3] w-full rounded-xl object-cover"
                 />
                 <figcaption className="mt-2 text-xs text-muted-foreground">{img.alt}</figcaption>
               </figure>
