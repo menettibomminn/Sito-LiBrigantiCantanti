@@ -6,6 +6,7 @@
 
 import sheetMusic from "@/assets/sheet-music.jpg";
 import group from "@/assets/group.jpg";
+import rehearsal from "@/assets/rehearsal.jpg";
 import territory from "@/assets/territory.jpg";
 
 export type NewsArticle = {
@@ -26,8 +27,8 @@ export const news: NewsArticle[] = [
     date: "2026-08-01",
     excerpt:
       "Dopo la pausa estiva torniamo in sala prove: ecco il calendario e come fare per venire ad ascoltarci o cantare con noi.",
-    image: rehearsalCover(),
-    imageAlt: "Coristi in sala prove",
+    image: rehearsal,
+    imageAlt: "Coristi durante una prova in sala",
     body: [
       "[Testo da completare] Racconta la ripresa delle prove: giorno, orario, luogo e il programma di lavoro dei prossimi mesi.",
       "[Testo da completare] Aggiungi un invito a chi vorrebbe unirsi al coro, indicando come prendere contatto e cosa aspettarsi dalla prima serata di prova.",
@@ -73,10 +74,6 @@ export const news: NewsArticle[] = [
     ],
   },
 ];
-
-function rehearsalCover() {
-  return sheetMusic;
-}
 
 export function formatNewsDate(iso: string) {
   return new Date(`${iso}T00:00:00`).toLocaleDateString("it-IT", {

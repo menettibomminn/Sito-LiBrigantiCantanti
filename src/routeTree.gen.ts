@@ -11,10 +11,17 @@
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as ChiSiamoRouteImport } from './routes/chi-siamo'
+import { Route as CollaborazioniRouteImport } from './routes/collaborazioni'
 import { Route as ConcertiDelPassatoRouteImport } from './routes/concerti-del-passato'
+import { Route as ContattiRouteImport } from './routes/contatti'
+import { Route as CookieRouteImport } from './routes/cookie'
 import { Route as DoveSiamoEProssimiConcertiRouteImport } from './routes/dove-siamo-e-prossimi-concerti'
 import { Route as GalleriaRouteImport } from './routes/galleria'
+import { Route as PrivacyRouteImport } from './routes/privacy'
 import { Route as RepertorioRouteImport } from './routes/repertorio'
+import { Route as TerritorioRouteImport } from './routes/territorio'
+import { Route as NewsIndexRouteImport } from './routes/news.index'
+import { Route as NewsSlugRouteImport } from './routes/news.$slug'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
@@ -26,9 +33,24 @@ const ChiSiamoRoute = ChiSiamoRouteImport.update({
   path: '/chi-siamo',
   getParentRoute: () => rootRouteImport,
 } as any)
+const CollaborazioniRoute = CollaborazioniRouteImport.update({
+  id: '/collaborazioni',
+  path: '/collaborazioni',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const ConcertiDelPassatoRoute = ConcertiDelPassatoRouteImport.update({
   id: '/concerti-del-passato',
   path: '/concerti-del-passato',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ContattiRoute = ContattiRouteImport.update({
+  id: '/contatti',
+  path: '/contatti',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const CookieRoute = CookieRouteImport.update({
+  id: '/cookie',
+  path: '/cookie',
   getParentRoute: () => rootRouteImport,
 } as any)
 const DoveSiamoEProssimiConcertiRoute =
@@ -42,71 +64,140 @@ const GalleriaRoute = GalleriaRouteImport.update({
   path: '/galleria',
   getParentRoute: () => rootRouteImport,
 } as any)
+const PrivacyRoute = PrivacyRouteImport.update({
+  id: '/privacy',
+  path: '/privacy',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const RepertorioRoute = RepertorioRouteImport.update({
   id: '/repertorio',
   path: '/repertorio',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const TerritorioRoute = TerritorioRouteImport.update({
+  id: '/territorio',
+  path: '/territorio',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const NewsIndexRoute = NewsIndexRouteImport.update({
+  id: '/news/',
+  path: '/news/',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const NewsSlugRoute = NewsSlugRouteImport.update({
+  id: '/news/$slug',
+  path: '/news/$slug',
   getParentRoute: () => rootRouteImport,
 } as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/chi-siamo': typeof ChiSiamoRoute
+  '/collaborazioni': typeof CollaborazioniRoute
   '/concerti-del-passato': typeof ConcertiDelPassatoRoute
+  '/contatti': typeof ContattiRoute
+  '/cookie': typeof CookieRoute
   '/dove-siamo-e-prossimi-concerti': typeof DoveSiamoEProssimiConcertiRoute
   '/galleria': typeof GalleriaRoute
+  '/privacy': typeof PrivacyRoute
   '/repertorio': typeof RepertorioRoute
+  '/territorio': typeof TerritorioRoute
+  '/news/$slug': typeof NewsSlugRoute
+  '/news/': typeof NewsIndexRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/chi-siamo': typeof ChiSiamoRoute
+  '/collaborazioni': typeof CollaborazioniRoute
   '/concerti-del-passato': typeof ConcertiDelPassatoRoute
+  '/contatti': typeof ContattiRoute
+  '/cookie': typeof CookieRoute
   '/dove-siamo-e-prossimi-concerti': typeof DoveSiamoEProssimiConcertiRoute
   '/galleria': typeof GalleriaRoute
+  '/privacy': typeof PrivacyRoute
   '/repertorio': typeof RepertorioRoute
+  '/territorio': typeof TerritorioRoute
+  '/news/$slug': typeof NewsSlugRoute
+  '/news': typeof NewsIndexRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
   '/chi-siamo': typeof ChiSiamoRoute
+  '/collaborazioni': typeof CollaborazioniRoute
   '/concerti-del-passato': typeof ConcertiDelPassatoRoute
+  '/contatti': typeof ContattiRoute
+  '/cookie': typeof CookieRoute
   '/dove-siamo-e-prossimi-concerti': typeof DoveSiamoEProssimiConcertiRoute
   '/galleria': typeof GalleriaRoute
+  '/privacy': typeof PrivacyRoute
   '/repertorio': typeof RepertorioRoute
+  '/territorio': typeof TerritorioRoute
+  '/news/$slug': typeof NewsSlugRoute
+  '/news/': typeof NewsIndexRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
   fullPaths:
     | '/'
     | '/chi-siamo'
+    | '/collaborazioni'
     | '/concerti-del-passato'
+    | '/contatti'
+    | '/cookie'
     | '/dove-siamo-e-prossimi-concerti'
     | '/galleria'
+    | '/privacy'
     | '/repertorio'
+    | '/territorio'
+    | '/news/$slug'
+    | '/news/'
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
     | '/chi-siamo'
+    | '/collaborazioni'
     | '/concerti-del-passato'
+    | '/contatti'
+    | '/cookie'
     | '/dove-siamo-e-prossimi-concerti'
     | '/galleria'
+    | '/privacy'
     | '/repertorio'
+    | '/territorio'
+    | '/news/$slug'
+    | '/news'
   id:
     | '__root__'
     | '/'
     | '/chi-siamo'
+    | '/collaborazioni'
     | '/concerti-del-passato'
+    | '/contatti'
+    | '/cookie'
     | '/dove-siamo-e-prossimi-concerti'
     | '/galleria'
+    | '/privacy'
     | '/repertorio'
+    | '/territorio'
+    | '/news/$slug'
+    | '/news/'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   ChiSiamoRoute: typeof ChiSiamoRoute
+  CollaborazioniRoute: typeof CollaborazioniRoute
   ConcertiDelPassatoRoute: typeof ConcertiDelPassatoRoute
+  ContattiRoute: typeof ContattiRoute
+  CookieRoute: typeof CookieRoute
   DoveSiamoEProssimiConcertiRoute: typeof DoveSiamoEProssimiConcertiRoute
   GalleriaRoute: typeof GalleriaRoute
+  PrivacyRoute: typeof PrivacyRoute
   RepertorioRoute: typeof RepertorioRoute
+  TerritorioRoute: typeof TerritorioRoute
+  NewsSlugRoute: typeof NewsSlugRoute
+  NewsIndexRoute: typeof NewsIndexRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -125,11 +216,32 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ChiSiamoRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/collaborazioni': {
+      id: '/collaborazioni'
+      path: '/collaborazioni'
+      fullPath: '/collaborazioni'
+      preLoaderRoute: typeof CollaborazioniRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/concerti-del-passato': {
       id: '/concerti-del-passato'
       path: '/concerti-del-passato'
       fullPath: '/concerti-del-passato'
       preLoaderRoute: typeof ConcertiDelPassatoRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/contatti': {
+      id: '/contatti'
+      path: '/contatti'
+      fullPath: '/contatti'
+      preLoaderRoute: typeof ContattiRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/cookie': {
+      id: '/cookie'
+      path: '/cookie'
+      fullPath: '/cookie'
+      preLoaderRoute: typeof CookieRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/dove-siamo-e-prossimi-concerti': {
@@ -146,11 +258,39 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof GalleriaRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/privacy': {
+      id: '/privacy'
+      path: '/privacy'
+      fullPath: '/privacy'
+      preLoaderRoute: typeof PrivacyRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/repertorio': {
       id: '/repertorio'
       path: '/repertorio'
       fullPath: '/repertorio'
       preLoaderRoute: typeof RepertorioRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/territorio': {
+      id: '/territorio'
+      path: '/territorio'
+      fullPath: '/territorio'
+      preLoaderRoute: typeof TerritorioRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/news/': {
+      id: '/news/'
+      path: '/news'
+      fullPath: '/news/'
+      preLoaderRoute: typeof NewsIndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/news/$slug': {
+      id: '/news/$slug'
+      path: '/news/$slug'
+      fullPath: '/news/$slug'
+      preLoaderRoute: typeof NewsSlugRouteImport
       parentRoute: typeof rootRouteImport
     }
   }
@@ -159,10 +299,17 @@ declare module '@tanstack/react-router' {
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   ChiSiamoRoute: ChiSiamoRoute,
+  CollaborazioniRoute: CollaborazioniRoute,
   ConcertiDelPassatoRoute: ConcertiDelPassatoRoute,
+  ContattiRoute: ContattiRoute,
+  CookieRoute: CookieRoute,
   DoveSiamoEProssimiConcertiRoute: DoveSiamoEProssimiConcertiRoute,
   GalleriaRoute: GalleriaRoute,
+  PrivacyRoute: PrivacyRoute,
   RepertorioRoute: RepertorioRoute,
+  TerritorioRoute: TerritorioRoute,
+  NewsSlugRoute: NewsSlugRoute,
+  NewsIndexRoute: NewsIndexRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
