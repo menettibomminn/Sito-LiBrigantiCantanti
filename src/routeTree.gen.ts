@@ -10,33 +10,103 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as ChiSiamoRouteImport } from './routes/chi-siamo'
+import { Route as ConcertiDelPassatoRouteImport } from './routes/concerti-del-passato'
+import { Route as DoveSiamoEProssimiConcertiRouteImport } from './routes/dove-siamo-e-prossimi-concerti'
+import { Route as GalleriaRouteImport } from './routes/galleria'
+import { Route as RepertorioRouteImport } from './routes/repertorio'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const ChiSiamoRoute = ChiSiamoRouteImport.update({
+  id: '/chi-siamo',
+  path: '/chi-siamo',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ConcertiDelPassatoRoute = ConcertiDelPassatoRouteImport.update({
+  id: '/concerti-del-passato',
+  path: '/concerti-del-passato',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const DoveSiamoEProssimiConcertiRoute =
+  DoveSiamoEProssimiConcertiRouteImport.update({
+    id: '/dove-siamo-e-prossimi-concerti',
+    path: '/dove-siamo-e-prossimi-concerti',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const GalleriaRoute = GalleriaRouteImport.update({
+  id: '/galleria',
+  path: '/galleria',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const RepertorioRoute = RepertorioRouteImport.update({
+  id: '/repertorio',
+  path: '/repertorio',
+  getParentRoute: () => rootRouteImport,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/chi-siamo': typeof ChiSiamoRoute
+  '/concerti-del-passato': typeof ConcertiDelPassatoRoute
+  '/dove-siamo-e-prossimi-concerti': typeof DoveSiamoEProssimiConcertiRoute
+  '/galleria': typeof GalleriaRoute
+  '/repertorio': typeof RepertorioRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/chi-siamo': typeof ChiSiamoRoute
+  '/concerti-del-passato': typeof ConcertiDelPassatoRoute
+  '/dove-siamo-e-prossimi-concerti': typeof DoveSiamoEProssimiConcertiRoute
+  '/galleria': typeof GalleriaRoute
+  '/repertorio': typeof RepertorioRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/chi-siamo': typeof ChiSiamoRoute
+  '/concerti-del-passato': typeof ConcertiDelPassatoRoute
+  '/dove-siamo-e-prossimi-concerti': typeof DoveSiamoEProssimiConcertiRoute
+  '/galleria': typeof GalleriaRoute
+  '/repertorio': typeof RepertorioRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/'
+  fullPaths:
+    | '/'
+    | '/chi-siamo'
+    | '/concerti-del-passato'
+    | '/dove-siamo-e-prossimi-concerti'
+    | '/galleria'
+    | '/repertorio'
   fileRoutesByTo: FileRoutesByTo
-  to: '/'
-  id: '__root__' | '/'
+  to:
+    | '/'
+    | '/chi-siamo'
+    | '/concerti-del-passato'
+    | '/dove-siamo-e-prossimi-concerti'
+    | '/galleria'
+    | '/repertorio'
+  id:
+    | '__root__'
+    | '/'
+    | '/chi-siamo'
+    | '/concerti-del-passato'
+    | '/dove-siamo-e-prossimi-concerti'
+    | '/galleria'
+    | '/repertorio'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  ChiSiamoRoute: typeof ChiSiamoRoute
+  ConcertiDelPassatoRoute: typeof ConcertiDelPassatoRoute
+  DoveSiamoEProssimiConcertiRoute: typeof DoveSiamoEProssimiConcertiRoute
+  GalleriaRoute: typeof GalleriaRoute
+  RepertorioRoute: typeof RepertorioRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -48,11 +118,51 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/chi-siamo': {
+      id: '/chi-siamo'
+      path: '/chi-siamo'
+      fullPath: '/chi-siamo'
+      preLoaderRoute: typeof ChiSiamoRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/concerti-del-passato': {
+      id: '/concerti-del-passato'
+      path: '/concerti-del-passato'
+      fullPath: '/concerti-del-passato'
+      preLoaderRoute: typeof ConcertiDelPassatoRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/dove-siamo-e-prossimi-concerti': {
+      id: '/dove-siamo-e-prossimi-concerti'
+      path: '/dove-siamo-e-prossimi-concerti'
+      fullPath: '/dove-siamo-e-prossimi-concerti'
+      preLoaderRoute: typeof DoveSiamoEProssimiConcertiRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/galleria': {
+      id: '/galleria'
+      path: '/galleria'
+      fullPath: '/galleria'
+      preLoaderRoute: typeof GalleriaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/repertorio': {
+      id: '/repertorio'
+      path: '/repertorio'
+      fullPath: '/repertorio'
+      preLoaderRoute: typeof RepertorioRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  ChiSiamoRoute: ChiSiamoRoute,
+  ConcertiDelPassatoRoute: ConcertiDelPassatoRoute,
+  DoveSiamoEProssimiConcertiRoute: DoveSiamoEProssimiConcertiRoute,
+  GalleriaRoute: GalleriaRoute,
+  RepertorioRoute: RepertorioRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
