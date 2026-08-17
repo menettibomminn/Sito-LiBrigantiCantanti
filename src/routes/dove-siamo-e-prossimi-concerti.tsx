@@ -59,7 +59,7 @@ function ProssimiConcertiPage() {
           <div className="mt-12 grid gap-10 lg:grid-cols-2">
             <div className="space-y-5">
               {site.venues.map((v) => (
-                <article key={v.name} className="border border-border bg-card p-6">
+                <article key={v.name} className="rounded-xl border-2 border-border bg-card p-6">
                   <h3 className="font-[family-name:var(--font-display)] text-xl text-foreground">
                     {v.name}
                   </h3>
@@ -70,7 +70,7 @@ function ProssimiConcertiPage() {
                   <p className="mt-2 text-sm text-muted-foreground">{v.note}</p>
                 </article>
               ))}
-              <article className="border border-border bg-card p-6">
+              <article className="rounded-xl border-2 border-border bg-card p-6">
                 <h3 className="font-[family-name:var(--font-display)] text-xl text-foreground">
                   Informazioni e contatti
                 </h3>
@@ -92,7 +92,7 @@ function ProssimiConcertiPage() {
             </div>
 
             {/* Mappa: incollare l'URL di embed in site.mapsEmbedUrl */}
-            <div className="min-h-72 border border-border bg-card">
+            <div className="min-h-72 rounded-xl border-2 border-border bg-card">
               {site.mapsEmbedUrl ? (
                 <iframe
                   title="Mappa delle sedi del coro"

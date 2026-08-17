@@ -47,7 +47,7 @@ function HomePage() {
           aria-hidden="true"
         />
         <div className="relative mx-auto w-full max-w-6xl px-4 pb-16 pt-28 sm:px-6 sm:pb-24">
-          <p className="text-xs font-bold uppercase tracking-[0.22em] text-gold">{site.tagline}</p>
+          <p className="text-xs font-extrabold uppercase tracking-wide text-gold">{site.tagline}</p>
           <h1 className="mt-4 max-w-3xl font-[family-name:var(--font-display)] text-5xl leading-[1.05] text-ink-foreground sm:text-6xl md:text-7xl">
             {site.name}
           </h1>
@@ -57,14 +57,14 @@ function HomePage() {
           <div className="mt-9 flex flex-col gap-3 sm:flex-row">
             <Link
               to="/chi-siamo"
-              className="inline-flex items-center justify-center gap-2 bg-gold px-6 py-3.5 text-sm font-semibold text-gold-foreground transition-colors hover:bg-gold/90"
+              className="inline-flex items-center justify-center gap-2 rounded-full bg-gold px-6 py-3.5 text-base font-bold text-gold-foreground transition-colors hover:bg-gold/90"
             >
               Scopri il coro
               <ArrowRight className="size-4" aria-hidden="true" />
             </Link>
             <Link
               to="/dove-siamo-e-prossimi-concerti"
-              className="inline-flex items-center justify-center gap-2 border border-ink-foreground/40 px-6 py-3.5 text-sm font-semibold text-ink-foreground transition-colors hover:border-gold hover:text-gold"
+              className="inline-flex items-center justify-center gap-2 rounded-full border-2 border-ink-foreground/40 px-6 py-3.5 text-base font-bold text-ink-foreground transition-colors hover:border-gold hover:text-gold"
             >
               Prossimi concerti
             </Link>
@@ -91,7 +91,7 @@ function HomePage() {
             </div>
             <Link
               to="/chi-siamo"
-              className="mt-8 inline-flex items-center gap-2 bg-primary px-6 py-3 text-sm font-semibold text-primary-foreground transition-colors hover:bg-primary/90"
+              className="mt-8 inline-flex items-center gap-2 rounded-full bg-primary px-6 py-3 text-base font-bold text-primary-foreground transition-colors hover:bg-primary/90"
             >
               Chi siamo
               <ArrowRight className="size-4" aria-hidden="true" />
@@ -121,7 +121,7 @@ function HomePage() {
       {next ? (
         <section className="bg-ink text-ink-foreground">
           <div className="mx-auto max-w-6xl px-4 py-16 sm:px-6 sm:py-20">
-            <p className="text-xs font-bold uppercase tracking-[0.2em] text-gold">
+            <p className="text-xs font-extrabold uppercase tracking-wide text-gold">
               Il prossimo concerto
             </p>
             <div className="mt-8 grid gap-10 lg:grid-cols-[1.4fr_1fr] lg:items-center">
@@ -171,7 +171,7 @@ function HomePage() {
                 ) : null}
                 <Link
                   to="/dove-siamo-e-prossimi-concerti"
-                  className="mt-9 inline-flex items-center gap-2 bg-gold px-6 py-3 text-sm font-semibold text-gold-foreground transition-colors hover:bg-gold/90"
+                  className="mt-9 inline-flex items-center gap-2 rounded-full bg-gold px-6 py-3 text-base font-bold text-gold-foreground transition-colors hover:bg-gold/90"
                 >
                   Tutti i concerti
                   <ArrowRight className="size-4" aria-hidden="true" />
@@ -239,7 +239,7 @@ function HomePage() {
           </ul>
           <Link
             to="/galleria"
-            className="mt-10 inline-flex items-center gap-2 bg-primary px-6 py-3 text-sm font-semibold text-primary-foreground transition-colors hover:bg-primary/90"
+            className="mt-10 inline-flex items-center gap-2 rounded-full bg-primary px-6 py-3 text-base font-bold text-primary-foreground transition-colors hover:bg-primary/90"
           >
             Vai alla galleria
             <ArrowRight className="size-4" aria-hidden="true" />

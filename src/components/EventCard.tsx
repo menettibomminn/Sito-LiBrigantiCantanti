@@ -5,7 +5,7 @@ import { concertDateParts, formatConcertDate, type Concert } from "@/data/concer
 /** Card evento con immagine — usata per "ultimi concerti" e archivio. */
 export function EventCard({ concert }: { concert: Concert }) {
   return (
-    <article className="group flex h-full flex-col border border-border bg-card transition-shadow hover:shadow-[0_12px_30px_-18px_rgba(60,40,20,0.45)]">
+    <article className="group flex h-full flex-col overflow-hidden rounded-xl border-2 border-border bg-card transition-all hover:-translate-y-0.5 hover:border-gold">
       {concert.image ? (
         <div className="relative aspect-[4/3] overflow-hidden">
           <img
@@ -16,7 +16,7 @@ export function EventCard({ concert }: { concert: Concert }) {
             height={960}
             className="size-full object-cover transition-transform duration-500 group-hover:scale-[1.04]"
           />
-          <p className="absolute left-0 top-0 bg-primary px-3 py-1.5 text-xs font-semibold uppercase tracking-wider text-primary-foreground">
+          <p className="absolute left-0 top-0 bg-primary px-3 py-1.5 text-xs font-extrabold uppercase tracking-wider text-primary-foreground">
             {formatConcertDate(concert.date)}
           </p>
         </div>
@@ -47,12 +47,12 @@ export function EventCard({ concert }: { concert: Concert }) {
 export function EventRow({ concert }: { concert: Concert }) {
   const { day, month, year } = concertDateParts(concert.date);
   return (
-    <article className="flex flex-col gap-5 border border-border bg-card p-5 sm:flex-row sm:gap-7 sm:p-6">
+    <article className="flex flex-col gap-5 rounded-xl border-2 border-border bg-card p-5 sm:flex-row sm:gap-7 sm:p-6">
       <div className="flex shrink-0 items-center gap-3 sm:flex-col sm:justify-center sm:gap-0 sm:border-r sm:border-border sm:pr-7">
         <span className="font-[family-name:var(--font-display)] text-4xl leading-none text-primary sm:text-5xl">
           {day}
         </span>
-        <span className="text-sm font-semibold uppercase tracking-[0.16em] text-foreground/80">
+        <span className="text-sm font-extrabold uppercase tracking-wide text-foreground/80">
           {month}
         </span>
         <span className="text-sm text-muted-foreground sm:mt-1">{year}</span>
@@ -78,13 +78,13 @@ export function EventRow({ concert }: { concert: Concert }) {
           <dl className="mt-4 space-y-1.5 border-t border-border pt-4 text-xs text-muted-foreground">
             {concert.guests?.length ? (
               <div className="flex gap-2">
-                <dt className="font-semibold uppercase tracking-wider">Cori partecipanti:</dt>
+                <dt className="font-extrabold uppercase tracking-wider">Cori partecipanti:</dt>
                 <dd>{concert.guests.join(", ")}</dd>
               </div>
             ) : null}
             {concert.conductors?.length ? (
               <div className="flex gap-2">
-                <dt className="font-semibold uppercase tracking-wider">Direttori:</dt>
+                <dt className="font-extrabold uppercase tracking-wider">Direttori:</dt>
                 <dd>{concert.conductors.join(", ")}</dd>
               </div>
             ) : null}
@@ -99,7 +99,7 @@ export function EventRow({ concert }: { concert: Concert }) {
 export function EventList({ concerts }: { concerts: Concert[] }) {
   if (concerts.length === 0) {
     return (
-      <p className="flex items-center gap-3 border border-dashed border-border bg-card p-6 text-sm text-muted-foreground">
+      <p className="flex items-center gap-3 rounded-xl border-2 border-dashed border-border bg-card p-6 text-sm text-muted-foreground">
         <CalendarDays className="size-5 text-gold" aria-hidden="true" />
         Nessun concerto in programma al momento: torna a trovarci presto.
       </p>

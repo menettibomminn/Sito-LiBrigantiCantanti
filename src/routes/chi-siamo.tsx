@@ -85,14 +85,14 @@ function ChiSiamoPage() {
           />
           <div className="mt-12 grid gap-6 sm:grid-cols-2">
             {voiceSections.map((sec) => (
-              <article key={sec.id} className="border border-border bg-card p-6">
+              <article key={sec.id} className="rounded-xl border-2 border-border bg-card p-6">
                 <h3 className="font-[family-name:var(--font-display)] text-2xl text-primary">
                   {sec.name}
                 </h3>
                 <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
                   {sec.description}
                 </p>
-                <h4 className="mt-6 text-xs font-bold uppercase tracking-[0.16em] text-foreground/70">
+                <h4 className="mt-6 text-xs font-extrabold uppercase tracking-wide text-foreground/70">
                   Componenti
                 </h4>
                 <ul className="mt-3 divide-y divide-border border-t border-border">

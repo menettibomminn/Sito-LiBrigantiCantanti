@@ -59,7 +59,7 @@ function ArticlePage() {
             <Breadcrumb items={[{ label: "News e curiosità", to: "/news" }]} current={article.title} />
             <time
               dateTime={article.date}
-              className="mt-8 block text-xs font-bold uppercase tracking-[0.18em] text-gold"
+              className="mt-8 block text-xs font-extrabold uppercase tracking-wide text-gold"
             >
               {formatNewsDate(article.date)}
             </time>

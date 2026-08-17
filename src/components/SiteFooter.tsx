@@ -31,7 +31,7 @@ export function SiteFooter() {
         </div>
 
         <nav aria-label="Collegamenti rapidi">
-          <h3 className="text-xs font-bold uppercase tracking-[0.18em] text-gold">
+          <h3 className="text-xs font-extrabold uppercase tracking-wide text-gold">
             Collegamenti rapidi
           </h3>
           <ul className="mt-5 space-y-2.5">
@@ -49,7 +49,7 @@ export function SiteFooter() {
         </nav>
 
         <div>
-          <h3 className="text-xs font-bold uppercase tracking-[0.18em] text-gold">Contatti</h3>
+          <h3 className="text-xs font-extrabold uppercase tracking-wide text-gold">Contatti</h3>
           <ul className="mt-5 space-y-4 text-sm text-ink-foreground/80">
             <li className="flex gap-3">
               <Mail className="mt-0.5 size-4 shrink-0 text-gold" aria-hidden="true" />

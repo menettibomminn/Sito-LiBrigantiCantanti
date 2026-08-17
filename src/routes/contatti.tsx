@@ -77,7 +77,7 @@ function ContattiPage() {
               </li>
             </ul>
 
-            <h3 className="mt-12 text-xs font-bold uppercase tracking-[0.18em] text-primary">
+            <h3 className="mt-12 text-xs font-extrabold uppercase tracking-wide text-primary">
               Le nostre sedi
             </h3>
             <ul className="mt-4 space-y-4">
@@ -90,7 +90,7 @@ function ContattiPage() {
               ))}
             </ul>
 
-            <h3 className="mt-12 text-xs font-bold uppercase tracking-[0.18em] text-primary">
+            <h3 className="mt-12 text-xs font-extrabold uppercase tracking-wide text-primary">
               Social
             </h3>
             <ul className="mt-4 flex flex-wrap gap-3">
@@ -130,7 +130,7 @@ function ContactForm() {
   }
 
   return (
-    <div className="border border-border bg-card p-6 sm:p-8">
+    <div className="rounded-xl border-2 border-border bg-card p-6 sm:p-8">
       <h2 className="rule-gold font-[family-name:var(--font-display)] text-2xl text-foreground sm:text-3xl">
         Modulo contatti
       </h2>
@@ -186,7 +186,7 @@ function ContactForm() {
           </div>
           <button
             type="submit"
-            className="inline-flex w-full items-center justify-center bg-primary px-6 py-3.5 text-sm font-semibold text-primary-foreground transition-colors hover:bg-primary/90 sm:w-auto"
+            className="inline-flex w-full items-center justify-center rounded-full bg-primary px-6 py-3.5 text-base font-bold text-primary-foreground transition-colors hover:bg-primary/90 sm:w-auto"
           >
             Invia
           </button>
