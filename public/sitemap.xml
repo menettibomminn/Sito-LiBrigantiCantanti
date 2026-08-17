@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- TODO: impostare BASE_URL con il dominio definitivo del sito -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>/</loc></url>
+  <url><loc>/chi-siamo</loc></url>
+  <url><loc>/dove-siamo-e-prossimi-concerti</loc></url>
+  <url><loc>/galleria</loc></url>
+  <url><loc>/repertorio</loc></url>
+  <url><loc>/concerti-del-passato</loc></url>
+  <url><loc>/news</loc></url>
+  <url><loc>/territorio</loc></url>
+  <url><loc>/collaborazioni</loc></url>
+  <url><loc>/contatti</loc></url>
+  <url><loc>/privacy</loc></url>
+  <url><loc>/cookie</loc></url>
+</urlset>
