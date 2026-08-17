@@ -6,10 +6,10 @@
 export const site = {
   name: "Briganti Cantanti",
   fullName: "Coro Briganti Cantanti",
-  tagline: "Coro polifonico dell'Appennino bolognese e modenese",
-  claim: "Voci, tradizione e amicizia tra le valli dell'Appennino.",
+  tagline: "Un coro di paese, tra Appennino bolognese e modenese",
+  claim: "Ci troviamo ogni settimana, cantiamo per passione e ci divertiamo insieme.",
   shortDescription:
-    "Siamo un coro amatoriale nato tra le colline dell'Appennino: cantiamo musica sacra, popolare e d'autore, coltivando l'amicizia e la cultura del nostro territorio.",
+    "Siamo un gruppo di amici che canta insieme da tanti anni tra le valli dell'Appennino: canti popolari, brani sacri e qualche pezzo d'autore, nelle chiese e nelle feste dei nostri paesi.",
   email: "info@brigantiCantanti.it",
   phone: "+39 000 000 0000",
   address: "Via del Coro 1, Savigno (BO)",
