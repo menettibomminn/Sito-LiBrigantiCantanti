@@ -8,6 +8,19 @@ import { cn } from "@/lib/utils";
 /** Voci mostrate nel menu orizzontale desktop (le altre nel menu "Altro") */
 const primaryCount = 6;
 
+/** Etichette abbreviate per il menu orizzontale desktop */
+const shortLabels: Record<string, string> = {
+  "Dove siamo e prossimi concerti": "Concerti",
+  "Galleria foto e video": "Galleria",
+  "I nostri concerti del passato": "Archivio",
+  "News e curiosità": "News",
+  "Il nostro territorio": "Territorio",
+};
+
+function shortLabel(label: string) {
+  return shortLabels[label] ?? label;
+}
+
 export function SiteHeader() {
   const [open, setOpen] = useState(false);
   const [compact, setCompact] = useState(false);
