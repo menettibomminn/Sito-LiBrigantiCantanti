@@ -29,7 +29,7 @@ function TerritorioPage() {
       <PageHero
         eyebrow="Il nostro territorio"
         title="Tra Savigno, Zocca e l'Appennino"
-        intro="Le valli, i borghi e le pievi che fanno da casa e da palcoscenico al nostro coro."
+        intro="Le valli, i paesi e le chiese dove viviamo e dove ci capita più spesso di cantare."
         image={territoryHero.src}
         imageAlt={territoryHero.alt}
         breadcrumb={{ label: "Il nostro territorio" }}

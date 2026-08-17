@@ -110,7 +110,7 @@ function HomePage() {
               Le prove settimanali del coro.
             </figcaption>
             <span
-              className="pointer-events-none absolute -bottom-3 -right-3 -z-10 hidden size-full border border-gold/70 sm:block"
+              className="pointer-events-none absolute -bottom-3 -right-3 -z-10 hidden size-full rounded-xl border-2 border-gold/70 sm:block"
               aria-hidden="true"
             />
           </figure>

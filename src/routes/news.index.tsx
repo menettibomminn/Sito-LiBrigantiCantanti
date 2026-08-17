@@ -40,8 +40,8 @@ function NewsIndexPage() {
       <section className="mx-auto max-w-6xl px-4 py-20 sm:px-6 sm:py-24">
         <SectionHeading
           eyebrow="Dal coro"
-          title="Tutti gli articoli"
-          description="Pubblichiamo periodicamente novità, curiosità musicali e racconti dalla vita del gruppo."
+          title="Il diario del coro"
+          description="Appunti dalle prove, trasferte, incontri con altri cori e piccole curiosità sui brani."
         />
         <ul className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {news.map((a) => (

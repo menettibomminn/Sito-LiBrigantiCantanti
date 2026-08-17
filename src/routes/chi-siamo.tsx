@@ -31,7 +31,7 @@ function ChiSiamoPage() {
       <PageHero
         eyebrow="Chi siamo"
         title="La storia del nostro coro"
-        intro="Un gruppo di voci nato dall'amicizia e dal piacere di cantare insieme, cresciuto negli anni attorno alle comunità dell'Appennino."
+        intro="Il coro è nato per amicizia e per il piacere di cantare insieme, e da allora non abbiamo più smesso."
         image={group}
         imageAlt="I coristi insieme in una piazza di paese"
         breadcrumb={{ label: "Chi siamo" }}
@@ -80,8 +80,8 @@ function ChiSiamoPage() {
         <div className="mx-auto max-w-6xl px-4 py-20 sm:px-6 sm:py-24">
           <SectionHeading
             eyebrow="Il gruppo"
-            title="I reparti vocali"
-            description="Il coro è formato da quattro reparti. Gli elenchi dei componenti sono in aggiornamento."
+            title="Le nostre voci"
+            description="Siamo divisi in quattro voci. Gli elenchi dei coristi sono in aggiornamento: aggiungiamo i nomi appena possibile."
           />
           <div className="mt-12 grid gap-6 sm:grid-cols-2">
             {voiceSections.map((sec) => (
