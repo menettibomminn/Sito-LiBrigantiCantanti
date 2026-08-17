@@ -64,7 +64,7 @@ function ProssimiConcertiPage() {
                     {v.name}
                   </h3>
                   <p className="mt-3 flex items-start gap-2 text-sm text-muted-foreground">
-                    <MapPin className="mt-0.5 size-4 shrink-0 text-gold" aria-hidden="true" />
+                    <MapPin className="mt-0.5 size-4 shrink-0 text-primary" aria-hidden="true" />
                     {v.address}
                   </p>
                   <p className="mt-2 text-sm text-muted-foreground">{v.note}</p>
@@ -76,13 +76,13 @@ function ProssimiConcertiPage() {
                 </h3>
                 <ul className="mt-4 space-y-3 text-sm text-muted-foreground">
                   <li className="flex items-center gap-2">
-                    <Mail className="size-4 text-gold" aria-hidden="true" />
+                    <Mail className="size-4 text-primary" aria-hidden="true" />
                     <a href={`mailto:${site.email}`} className="hover:text-primary">
                       {site.email}
                     </a>
                   </li>
                   <li className="flex items-center gap-2">
-                    <Phone className="size-4 text-gold" aria-hidden="true" />
+                    <Phone className="size-4 text-primary" aria-hidden="true" />
                     <a href={`tel:${site.phone.replace(/\s/g, "")}`} className="hover:text-primary">
                       {site.phone}
                     </a>
@@ -102,7 +102,7 @@ function ProssimiConcertiPage() {
                 />
               ) : (
                 <div className="flex h-full min-h-72 flex-col items-center justify-center gap-3 p-8 text-center">
-                  <MapPin className="size-8 text-gold" aria-hidden="true" />
+                  <MapPin className="size-8 text-primary" aria-hidden="true" />
                   <p className="font-[family-name:var(--font-display)] text-xl text-foreground">
                     Mappa in arrivo
                   </p>

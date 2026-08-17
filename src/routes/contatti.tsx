@@ -42,7 +42,7 @@ function ContattiPage() {
             <SectionHeading eyebrow="Recapiti" title="Come raggiungerci" />
             <ul className="mt-10 space-y-5 text-sm">
               <li className="flex items-start gap-3">
-                <Mail className="mt-0.5 size-5 shrink-0 text-gold" aria-hidden="true" />
+                <Mail className="mt-0.5 size-5 shrink-0 text-primary" aria-hidden="true" />
                 <span>
                   <span className="block text-xs uppercase tracking-wider text-muted-foreground">
                     Email
@@ -53,7 +53,7 @@ function ContattiPage() {
                 </span>
               </li>
               <li className="flex items-start gap-3">
-                <Phone className="mt-0.5 size-5 shrink-0 text-gold" aria-hidden="true" />
+                <Phone className="mt-0.5 size-5 shrink-0 text-primary" aria-hidden="true" />
                 <span>
                   <span className="block text-xs uppercase tracking-wider text-muted-foreground">
                     Telefono
@@ -67,7 +67,7 @@ function ContattiPage() {
                 </span>
               </li>
               <li className="flex items-start gap-3">
-                <MapPin className="mt-0.5 size-5 shrink-0 text-gold" aria-hidden="true" />
+                <MapPin className="mt-0.5 size-5 shrink-0 text-primary" aria-hidden="true" />
                 <span>
                   <span className="block text-xs uppercase tracking-wider text-muted-foreground">
                     Indirizzo
