@@ -64,7 +64,7 @@ export function GalleryGrid({ items }: { items: Photo[] }) {
         <div
           role="dialog"
           aria-modal="true"
-          aria-label={active.caption}
+          aria-label={active.alt}
           className="fixed inset-0 z-[100] flex flex-col bg-ink/95 p-4 sm:p-8"
         >
           <div className="flex justify-end">
@@ -86,15 +86,12 @@ export function GalleryGrid({ items }: { items: Photo[] }) {
             >
               <ChevronLeft className="size-5" aria-hidden="true" />
             </button>
-            <figure className="flex max-h-full min-w-0 flex-col items-center gap-4">
+            <figure className="flex max-h-full min-w-0 items-center justify-center">
               <img
                 src={active.src}
                 alt={active.alt}
-                className="max-h-[70vh] w-auto max-w-full object-contain"
+                className="max-h-[75vh] w-auto max-w-full object-contain"
               />
-              <figcaption className="text-center text-sm text-ink-foreground/80">
-                {active.caption}
-              </figcaption>
             </figure>
             <button
               type="button"
