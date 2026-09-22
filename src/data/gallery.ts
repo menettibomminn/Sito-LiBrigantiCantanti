@@ -81,6 +81,56 @@ export const photos: Photo[] = [
     src: galleria10.url,
     alt: "Il coro con il maestro e l'arpa durante una serata estiva",
   },
+  {
+    id: "foto-11",
+    src: galleria11.url,
+    alt: "Il coro canta in una sala con le pareti arancioni davanti al pubblico della residenza",
+  },
+  {
+    id: "foto-12",
+    src: galleria12.url,
+    alt: "Il maestro dirige il coro nella sala della residenza per anziani, tra libri e poltrone",
+  },
+  {
+    id: "foto-13",
+    src: galleria13.url,
+    alt: "Il coro in concerto nella chiesa barocca, sul podio davanti all'altare maggiore",
+  },
+  {
+    id: "foto-14",
+    src: galleria14.url,
+    alt: "I coristi con i faldoni delle partiture cantano nella chiesa, accompagnati dal maestro",
+  },
+  {
+    id: "foto-15",
+    src: galleria15.url,
+    alt: "Il coro in concerto alla luce delle candele, con il maestro al microfono",
+  },
+  {
+    id: "foto-16",
+    src: galleria16.url,
+    alt: "Il maestro dirige il coro sui gradini dell'altare, tra le panche della chiesa",
+  },
+  {
+    id: "foto-17",
+    src: galleria17.url,
+    alt: "Il coro in concerto sul palco di legno del teatro, sotto le luci della scena",
+  },
+  {
+    id: "foto-18",
+    src: galleria18.url,
+    alt: "Concerto natalizio in chiesa con l'arpa, la banda e il presepe illuminato",
+  },
+  {
+    id: "foto-19",
+    src: galleria19.url,
+    alt: "L'arpista suona le sue note blu durante il concerto natalizio in chiesa",
+  },
+  {
+    id: "foto-20",
+    src: galleria20.url,
+    alt: "Gli applausi del pubblico e degli ospiti al termine del concerto natalizio",
+  },
 ];
 
 export type Video = {
