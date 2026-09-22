@@ -4,8 +4,8 @@
  */
 
 export const site = {
-  name: "Briganti Cantanti",
-  fullName: "Coro Briganti Cantanti",
+  name: "Li Briganti Cantanti",
+  fullName: "Coro Li Briganti Cantanti",
   tagline: "Un coro di paese, tra Appennino bolognese e modenese",
   claim: "Ci troviamo ogni settimana, cantiamo per passione e ci divertiamo insieme.",
   shortDescription:
