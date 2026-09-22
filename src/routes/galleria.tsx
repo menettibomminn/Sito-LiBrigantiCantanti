@@ -33,8 +33,8 @@ function GalleriaPage() {
         eyebrow="Galleria"
         title="Foto e video"
         intro="Immagini e riprese dei concerti, delle prove e delle trasferte del coro."
-        image={concertSquare}
-        imageAlt="Concerto serale del coro nella piazza di un borgo"
+        image={concertSquare.url}
+        imageAlt="Il coro in concerto nella chiesa, con il maestro sul podio"
         breadcrumb={{ label: "Galleria foto e video" }}
       />
 
