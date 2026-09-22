@@ -1,8 +1,8 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { ArrowRight, CalendarDays, Clock, MapPin, Users } from "lucide-react";
 
-import heroChoir from "@/assets/hero-choir.jpg";
 import rehearsal from "@/assets/rehearsal.jpg";
+import { HeroSlideshow } from "@/components/HeroSlideshow";
 import { SectionHeading } from "@/components/SectionHeading";
 import { EventCard } from "@/components/EventCard";
 import { NewsCard } from "@/components/NewsCard";
@@ -35,13 +35,7 @@ function HomePage() {
     <>
       {/* HERO */}
       <section className="relative isolate flex min-h-[78vh] items-end overflow-hidden bg-ink">
-        <img
-          src={heroChoir}
-          alt="Il coro durante un'esibizione in una chiesa storica"
-          width={1920}
-          height={1088}
-          className="absolute inset-0 size-full object-cover opacity-80"
-        />
+        <HeroSlideshow />
         <div
           className="absolute inset-0 bg-ink/55"
           aria-hidden="true"
