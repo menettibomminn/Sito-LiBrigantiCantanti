@@ -1,6 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 
-import group from "@/assets/group.jpg";
+import serataEstiva from "@/assets/coro-serata-estiva.jpg.asset.json";
 import { PageHero } from "@/components/PageHero";
 import { SectionHeading } from "@/components/SectionHeading";
 import { PersonCard } from "@/components/PersonCard";
