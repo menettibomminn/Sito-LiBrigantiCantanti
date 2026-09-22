@@ -1,7 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useState } from "react";
 
-import heroChoir from "@/assets/hero-choir.jpg";
+import pastConcertHero from "@/assets/coro-concerto-natalizio-chiesa.jpg.asset.json";
 import { PageHero } from "@/components/PageHero";
 import { SectionHeading } from "@/components/SectionHeading";
 import { EventCard } from "@/components/EventCard";
@@ -38,8 +38,8 @@ function ConcertiPassatiPage() {
         eyebrow="Archivio"
         title="I nostri concerti del passato"
         intro="Le serate che abbiamo condiviso con il pubblico e con gli altri cori del territorio."
-        image={heroChoir}
-        imageAlt="Il coro durante un concerto in chiesa"
+        image={pastConcertHero.url}
+        imageAlt="Il coro che canta durante un concerto natalizio in chiesa, con il maestro sul podio"
         breadcrumb={{ label: "I nostri concerti del passato" }}
       />
 
