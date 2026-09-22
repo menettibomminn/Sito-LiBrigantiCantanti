@@ -1,7 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { PlayCircle } from "lucide-react";
 
-import concertSquare from "@/assets/concert-square.jpg";
+import concertSquare from "@/assets/coro-concerto-chiesa.jpg.asset.json";
 import { PageHero } from "@/components/PageHero";
 import { SectionHeading } from "@/components/SectionHeading";
 import { GalleryGrid } from "@/components/GalleryGrid";
