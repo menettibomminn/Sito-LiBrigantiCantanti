@@ -1,6 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 
-import group from "@/assets/group.jpg";
+import serataEstiva from "@/assets/coro-serata-estiva.jpg.asset.json";
 import { PageHero } from "@/components/PageHero";
 import { SectionHeading } from "@/components/SectionHeading";
 import { PersonCard } from "@/components/PersonCard";
@@ -32,8 +32,8 @@ function ChiSiamoPage() {
         eyebrow="Chi siamo"
         title="La storia del nostro coro"
         intro="Il coro è nato per amicizia e per il piacere di cantare insieme, e da allora non abbiamo più smesso."
-        image={group}
-        imageAlt="I coristi insieme in una piazza di paese"
+        image={serataEstiva.url}
+        imageAlt="Il coro che canta durante una serata estiva all'aperto"
         breadcrumb={{ label: "Chi siamo" }}
       />
 
