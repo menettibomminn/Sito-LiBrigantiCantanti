@@ -17,6 +17,16 @@ import galleria07 from "@/assets/galleria/galleria-07.jpg.asset.json";
 import galleria08 from "@/assets/galleria/galleria-08.jpg.asset.json";
 import galleria09 from "@/assets/galleria/galleria-09.jpg.asset.json";
 import galleria10 from "@/assets/galleria/galleria-10.jpg.asset.json";
+import galleria11 from "@/assets/galleria/galleria-11.jpg.asset.json";
+import galleria12 from "@/assets/galleria/galleria-12.jpg.asset.json";
+import galleria13 from "@/assets/galleria/galleria-13.jpg.asset.json";
+import galleria14 from "@/assets/galleria/galleria-14.jpg.asset.json";
+import galleria15 from "@/assets/galleria/galleria-15.jpg.asset.json";
+import galleria16 from "@/assets/galleria/galleria-16.jpg.asset.json";
+import galleria17 from "@/assets/galleria/galleria-17.jpg.asset.json";
+import galleria18 from "@/assets/galleria/galleria-18.jpg.asset.json";
+import galleria19 from "@/assets/galleria/galleria-19.jpg.asset.json";
+import galleria20 from "@/assets/galleria/galleria-20.jpg.asset.json";
 
 export type Photo = { id: string; src: string; alt: string };
 
