@@ -32,8 +32,8 @@ export function HeroSlideshow() {
     <div className="absolute inset-0" aria-hidden="true">
       {slides.map((photo, index) => (
         <img
-          key={photo.asset_id}
-          src={photo.url}
+          key={photo}
+          src={photo}
           alt=""
           width={1920}
           height={1080}
