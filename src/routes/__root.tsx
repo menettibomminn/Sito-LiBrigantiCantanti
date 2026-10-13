@@ -12,6 +12,7 @@ import { useEffect, type ReactNode } from "react";
 
 import appCss from "../styles.css?url";
 import { reportLovableError } from "../lib/lovable-error-reporting";
+import { SiteBanner } from "@/components/SiteBanner";
 import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
 import { site } from "@/data/site";
@@ -144,6 +145,7 @@ function RootComponent() {
       >
         Salta al contenuto
       </a>
+      <SiteBanner />
       <SiteHeader />
       <main id="contenuto">
         {/* Required: nested routes render here. Removing <Outlet /> breaks all child routes. */}
