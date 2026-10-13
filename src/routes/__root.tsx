@@ -145,6 +145,7 @@ function RootComponent() {
       >
         Salta al contenuto
       </a>
+      <SiteBanner />
       <SiteHeader />
       <main id="contenuto">
         {/* Required: nested routes render here. Removing <Outlet /> breaks all child routes. */}
