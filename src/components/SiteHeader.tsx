@@ -79,7 +79,7 @@ export function SiteHeader() {
                 compact && "hidden sm:block",
               )}
             >
-              Cantiamo insieme dal 1998
+              Cantiamo insieme dall'autunno del 2009
             </span>
           </span>
         </Link>
