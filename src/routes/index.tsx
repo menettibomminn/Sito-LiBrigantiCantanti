@@ -215,7 +215,7 @@ function HomePage() {
           <SectionHeading
             eyebrow="Galleria"
             title="Foto di concerti e di prove"
-            description="Qualche foto scattata da noi, senza troppe pretese."
+            description="Qualche foto scattata da noi."
           />
           <ul className="mt-12 grid grid-cols-2 gap-3 sm:gap-4 lg:grid-cols-3">
             {preview.map((p) => (
