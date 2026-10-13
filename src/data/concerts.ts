@@ -77,8 +77,8 @@ export const pastConcerts: Concert[] = [
     description:
       "Concerto all'aperto nell'ambito della festa del paese, con repertorio popolare e italiano.",
     guests: ["Coro ospite — da definire"],
-    image: "/assets/chiesa-zocca-parrocchia.jpg",
-    imageAlt: "La chiesa parrocchiale con il campanile nella piazza del paese",
+    image: "/assets/coro-in-chiesa.jpg",
+    imageAlt: "Il coro che canta in chiesa, con il direttore sul podio",
   },
   {
     id: "2026-05-01-rassegna-primavera",
