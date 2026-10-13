@@ -77,10 +77,7 @@ function HomePage() {
             />
             <div className="prose-warm mt-6 max-w-xl">
               <p>
-                Ci troviamo ogni settimana per le prove: si impara qualche brano nuovo, si ride
-                un po' e alla fine si finisce spesso a chiacchierare. Durante l'anno cantiamo nelle
-                chiese, nelle sale del paese e alle feste del territorio. Il nostro repertorio mette
-                insieme canti popolari, brani sacri e qualche pezzo che ci è entrato nel cuore.
+                Ci troviamo tutti i lunedì sera di ogni mese dalle ore 21:00 alle ore 23:00 per le prove. Tre volte a Savigno e una volta a Zocca.
               </p>
             </div>
             <Link
