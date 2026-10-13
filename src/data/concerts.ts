@@ -73,7 +73,7 @@ export const pastConcerts: Concert[] = [
     date: "2026-06-14",
     title: "Canti nel borgo",
     venue: "Chiesa Montetortore",
-    city: "Casemiro, Zocca (MO)",
+    city: "Casa Miro, Zocca (MO)",
     description:
       "Concerto all'aperto nell'ambito della festa del paese, con repertorio popolare e italiano.",
     guests: ["Coro ospite — da definire"],
