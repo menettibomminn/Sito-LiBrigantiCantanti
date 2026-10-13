@@ -191,7 +191,7 @@ function HomePage() {
         <SectionHeading
           eyebrow="Archivio"
           title="Gli ultimi concerti"
-          description="Qualche serata delle ultime stagioni, tra chiese di montagna, sale parrocchiali e piazze di paese."
+          description="Qualche serata delle ultime stagioni, tra chiese di montagna e sale parrocchiali."
         />
         <ul className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {latest.map((c) => (
