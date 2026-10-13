@@ -17,8 +17,7 @@ export function SiteFooter() {
         <div>
           <h2 className="font-[family-name:var(--font-display)] text-2xl">{site.fullName}</h2>
           <p className="mt-3 max-w-sm text-sm leading-relaxed text-ink-foreground/75">
-            Ci piace cantare insieme e portare la nostra musica nelle chiese e nelle feste dei nostri
-            paesi.
+            Ci piace cantare insieme nelle chiese, nelle sale e nelle feste dei nostri paesi
           </p>
           <ul className="mt-5 flex flex-wrap gap-3">
             {site.social.map((s) => (
