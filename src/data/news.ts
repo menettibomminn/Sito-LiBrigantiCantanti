@@ -24,7 +24,7 @@ export const news: NewsArticle[] = [
   {
     slug: "riprendono-le-prove",
     title: "Riprendono le prove del coro",
-    date: "2026-08-01",
+    date: "2026-09-07",
     excerpt:
       "Dopo la pausa estiva torniamo in sala prove: ecco il calendario e come fare per venire ad ascoltarci o cantare con noi.",
     image: rehearsal,
