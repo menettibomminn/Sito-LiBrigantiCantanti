@@ -7,7 +7,7 @@ export const site = {
   name: "Li Briganti Cantanti",
   fullName: "Coro Li Briganti Cantanti",
   tagline: "Un coro di paese, tra Appennino bolognese e modenese",
-  claim: "Ci troviamo ogni settimana, cantiamo per passione e ci divertiamo insieme.",
+  claim: "Ci troviamo tutti i lunedì sera, cantiamo per passione e ci divertiamo insieme.",
   shortDescription:
     "Siamo un gruppo di amici che canta insieme da tanti anni tra le valli dell'Appennino: canti popolari, brani sacri e qualche pezzo d'autore, nelle chiese e nelle feste dei nostri paesi.",
   email: "bacchelli.marco@gmail.com",
