@@ -10,8 +10,7 @@ export const history: { heading: string; paragraphs: string[] }[] = [
   {
     heading: "La nascita del coro",
     paragraphs: [
-      "[Testo da completare] Racconta qui come e quando è nato il coro, per iniziativa di chi e in quale occasione: una festa di paese, una funzione religiosa, l'incontro fra alcuni amici appassionati di canto.",
-      "[Testo da completare] Aggiungi i primi passi del gruppo: le prime prove, la prima esibizione pubblica, l'accoglienza del paese.",
+      "Il coro nasce nell'autunno del 2009 dall'incontro tra circa 25 coristi provenienti da diversi gruppi vocali dell'Appennino Emiliano, in particolare dalle località di Savigno (Bo) e Zocca (Mo). I due nuclei originari erano però partiti già molti anni prima: il gruppo di Savigno nasce sul finire degli anni '70 sotto la spinta dell'AERCO (Ass. Em. Rom. Cori) che, oggi come allora, organizza e promuove la coralità. Dopo alcuni anni di attività il coro si scioglie e molti coristi confluiscono in compagini canore diverse. Alcuni partecipano alle attività del coro \"Monte della Riva\" di Zocca gettando inconsapevolmente una sorta di ponte in quello che sarebbe poi divenuto il coro de \"Li Briganti Cantanti\". A proposito di questo: ogni gruppo che si forma ha bisogno di un nome che lo renda riconoscibile... quindi, come chiamarci? Ecco allora che la provenienza della maggior parte dei coristi ha suggerito il nome: pare infatti che un fenomeno abbia accomunato, dal 1500 fino a circa metà del 1800, questi due comuni \"montanari\" confinanti: il Brigantaggio. Ed imitando una banda di briganti, il coro si muove \"razziando\" tra vari generi di musica vocale: dal sacro al profano, dal colto al popolare, dall'antico al moderno. Essendosi formata da poco tempo, questa masnada ha ancora il \"bottino/repertorio\" dei propri forzieri ben lungi dall'essere riempito...ma ci sta lavorando con entusiasmo!!",
     ],
   },
   {
