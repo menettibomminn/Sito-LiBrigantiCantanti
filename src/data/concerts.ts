@@ -75,7 +75,6 @@ export const pastConcerts: Concert[] = [
     venue: "Chiesa Montetortore",
     city: "Casa Miro, Zocca (MO)",
     description: 'Concerto inserito nella Rassegna Musicale "Musica per un Restauro".',
-    guests: ["Coro Li Briganti Cantanti"],
     image: "/assets/chiesa-montetortore.jpg",
     imageAlt: "La chiesa con la facciata a capanna e il campanile in pietra, affacciata sul prato",
   },
@@ -87,7 +86,6 @@ export const pastConcerts: Concert[] = [
     city: "Zocca (MO)",
     description:
       'Tradizionale concerto di Sant\'Anna insieme alla corale "SS. Pietro e Paolo" di Anzola dell\'Emilia (Bo). Direttrice: Angela Balboni. Organista: Simone Serra.',
-    guests: ["Coro Li Briganti Cantanti"],
     image: "/assets/chiesa-parrocchiale-zocca.jpg",
     imageAlt: "La facciata in pietra della chiesa parrocchiale di Zocca con il campanile",
   },
