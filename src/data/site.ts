@@ -10,7 +10,7 @@ export const site = {
   claim: "Ci troviamo ogni settimana, cantiamo per passione e ci divertiamo insieme.",
   shortDescription:
     "Siamo un gruppo di amici che canta insieme da tanti anni tra le valli dell'Appennino: canti popolari, brani sacri e qualche pezzo d'autore, nelle chiese e nelle feste dei nostri paesi.",
-  email: "info@brigantiCantanti.it",
+  email: "bacchelli.marco@gmail.com",
   phone: "+39 000 000 0000",
   address: "Via del Coro 1, Savigno (BO)",
   vatOrCf: "C.F. 00000000000",
