@@ -82,7 +82,7 @@ export const pastConcerts: Concert[] = [
   {
     id: "2026-05-01-rassegna-primavera",
     date: "2026-07-26",
-    title: "Rassegna di primavera",
+    title: "Concerto di Sant'Anna",
     venue: "Chiesa parrocchiale",
     city: "Zocca (MO)",
     description: "Incontro tra cori del territorio con programma sacro e profano.",
