@@ -88,8 +88,8 @@ export const pastConcerts: Concert[] = [
     description:
       'Tradizionale concerto di Sant\'Anna insieme alla corale "SS. Pietro e Paolo" di Anzola dell\'Emilia (Bo). Direttrice: Angela Balboni. Organista: Simone Serra.',
     guests: ["Li Briganti Cantanti"],
-    image: church,
-    imageAlt: "Interno di chiesa durante una rassegna corale",
+    image: "/assets/chiesa-parrocchiale-zocca.jpg",
+    imageAlt: "La facciata in pietra della chiesa parrocchiale di Zocca con il campanile",
   },
   {
     id: "2026-03-22-concerto-quaresima",
