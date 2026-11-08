@@ -30,7 +30,7 @@ export const upcomingConcerts: Concert[] = [
     id: "2026-09-12-rassegna-savigno",
     date: "2026-09-12",
     time: "21.00",
-    title: "Rassegna corale d'autunno",
+    title: "Concerto di Natale",
     venue: "Chiesa di Santa Maria Assunta",
     city: "Savigno (BO)",
     description:
