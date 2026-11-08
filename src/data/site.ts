@@ -27,9 +27,9 @@ export const site = {
       note: "Sede associativa e archivio musicale.",
     },
     {
-      name: "Sala prove",
-      address: "Teatro parrocchiale — Zocca (MO)",
-      note: "Prove ogni venerdì dalle 21.00 alle 23.00.",
+      name: 'Centro Culturale "Le Nonne": via Marconi 22, Savigno, Valsamoggia (Bo)',
+      address: "",
+      note: "",
     },
   ],
   /** Sostituire con l'URL di embed di Google Maps quando disponibile */
