@@ -99,9 +99,9 @@ export const directors: Director[] = [
   },
   {
     id: "direttore-2",
-    name: "Nome del vicedirettore",
+    name: "Simonetta Casagrandi Venturelli",
     role: "Vicedirettore e maestro accompagnatore",
-    bio: "[Biografia da completare] Ruolo all'interno del coro, strumento suonato, collaborazioni e contributo alla preparazione dei concerti.",
+    bio: "",
     image: rehearsal,
     imageAlt: "Ritratto del vicedirettore al pianoforte",
   },
