@@ -22,9 +22,9 @@ export const site = {
   /** Sedi e luoghi delle prove */
   venues: [
     {
-      name: "Sede del coro",
-      address: "Via del Coro 1 — Savigno (BO)",
-      note: "Sede associativa e archivio musicale.",
+      name: 'Teatro comunale "Vasco Rossi" di Zocca, via del Mercato, 104, Zocca',
+      address: "",
+      note: "",
     },
     {
       name: 'Centro Culturale "Le Nonne": via Marconi 22, Savigno, Valsamoggia (Bo)',
