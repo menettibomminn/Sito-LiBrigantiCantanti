@@ -34,7 +34,7 @@ export const upcomingConcerts: Concert[] = [
     venue: "Chiesa di Santa Maria Assunta",
     city: "Savigno (BO)",
     description:
-      "Programma di musica sacra e canti popolari dell'Appennino, con letture tra i brani. Ingresso libero.",
+      "Programma di musica sacra e brani tradizionali natalizi. Ingresso ad offerta libera.",
     guests: ["Coro ospite — da definire"],
     conductors: ["Direttore del coro"],
     image: church,
