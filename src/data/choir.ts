@@ -63,7 +63,7 @@ export const voiceSections: VoiceSection[] = [
     id: "contralti",
     name: "Contralti",
     description: "Voci femminili gravi: sostengono l'armonia e danno calore all'insieme.",
-    members: ["Nome Cognome", "Nome Cognome", "Nome Cognome"],
+    members: ["Cinzia Rossi", "Anna Maria Venturi", "Anna Maria Portacci"],
   },
   {
     id: "tenori",
