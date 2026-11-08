@@ -91,9 +91,9 @@ export type Director = {
 export const directors: Director[] = [
   {
     id: "direttore-1",
-    name: "Nome del direttore",
+    name: "Marco Bacchelli",
     role: "Direttore del coro",
-    bio: "[Biografia da completare] Formazione musicale, esperienze precedenti, anno di ingresso nel coro e progetti musicali portati avanti con il gruppo.",
+    bio: "",
     image: conductor,
     imageAlt: "Ritratto del direttore del coro",
   },
