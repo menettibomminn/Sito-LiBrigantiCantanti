@@ -9,7 +9,7 @@ export const site = {
   tagline: "Un coro di paese, tra Appennino bolognese e modenese",
   claim: "Ci troviamo tutti i lunedì sera, cantiamo per passione e ci divertiamo insieme.",
   shortDescription:
-    "Siamo un gruppo di amici che canta insieme da tanti anni tra le valli dell'Appennino: canti popolari, brani sacri e qualche pezzo d'autore, nelle chiese e nelle feste dei nostri paesi.",
+    "Siamo un gruppo di amici che canta insieme da tanti anni tra le valli dell'Appennino emiliano, in particolare della Valsamoggia e della Valle del Panaro: canti popolari, brani di musica sacra, brani d'autore, qualche canto degli alpini nelle chiese, nelle sale comunali e nelle feste dei nostri paesi.",
   email: "bacchelli.marco@gmail.com",
   phone: "+39 348 334 5369",
   address: 'Centro Culturale "Le Nonne": via Marconi 22, Savigno, Valsamoggia (Bo)',
