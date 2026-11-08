@@ -28,7 +28,7 @@ export const Route = createFileRoute("/")({
 
 function HomePage() {
   const next = upcomingConcerts[0];
-  const latest = pastConcerts.slice(0, 3);
+  const latest = pastConcerts.slice(0, 2);
   const preview = photos.slice(0, 6);
 
   return (
