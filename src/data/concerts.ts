@@ -70,7 +70,7 @@ export const upcomingConcerts: Concert[] = [
 export const pastConcerts: Concert[] = [
   {
     id: "2026-06-14-festa-borgo",
-    date: "2026-06-14",
+    date: "2026-08-30",
     title: "Canti nel borgo",
     venue: "Chiesa Montetortore",
     city: "Casa Miro, Zocca (MO)",
