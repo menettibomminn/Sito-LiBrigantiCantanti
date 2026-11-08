@@ -12,7 +12,7 @@ export const site = {
     "Siamo un gruppo di amici che canta insieme da tanti anni tra le valli dell'Appennino: canti popolari, brani sacri e qualche pezzo d'autore, nelle chiese e nelle feste dei nostri paesi.",
   email: "bacchelli.marco@gmail.com",
   phone: "+39 348 334 5369",
-  address: "Via del Coro 1, Savigno (BO)",
+  address: 'Centro Culturale "Le Nonne": via Marconi 22, Savigno, Valsamoggia (Bo)',
   vatOrCf: "C.F. 00000000000",
   social: [
     { label: "Facebook", href: "https://facebook.com" },
