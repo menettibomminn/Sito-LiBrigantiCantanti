@@ -57,25 +57,39 @@ export const voiceSections: VoiceSection[] = [
     id: "soprani",
     name: "Soprani",
     description: "La voce più acuta del coro: porta la linea melodica principale.",
-    members: ["Claudia Collina", "Tosca Creda", "Rossana Montanari", "Ornella Nozzi"],
+    members: [
+      "Claudia Collina",
+      "Nicoletta Giorgi",
+      "Ornella Nozzi",
+      "Rossana Montanari",
+      "Tosca Creda",
+    ],
   },
   {
     id: "contralti",
     name: "Contralti",
     description: "Voci femminili gravi: sostengono l'armonia e danno calore all'insieme.",
-    members: ["Cinzia Rossi", "Anna Maria Venturi", "Anna Maria Portacci"],
+    members: [
+      "Alberta Bernardi",
+      "Anna Maria Portacci",
+      "Anna Maria Venturi",
+      "Claudia Foscari",
+      "Cinzia Rossi",
+      "Orianna Tondi",
+      "Simonetta Casagrandi Venturelli",
+    ],
   },
   {
     id: "tenori",
     name: "Tenori",
     description: "Voci maschili acute: colore e slancio alla polifonia.",
-    members: ["Nome Cognome", "Nome Cognome", "Nome Cognome"],
+    members: ["Andrea Rago", "Andrea Rubini", "Antonio Vacondio"],
   },
   {
     id: "bassi",
     name: "Bassi e baritoni",
     description: "Il fondamento del coro: la base armonica su cui poggia tutto.",
-    members: ["Carlo Lagazzi", "Nome Cognome", "Nome Cognome", "Nome Cognome"],
+    members: ["Carlo Lagazzi", "Lucio Migliori", "Luigi Ropa", "Nome Cognome"],
   },
 ];
 
