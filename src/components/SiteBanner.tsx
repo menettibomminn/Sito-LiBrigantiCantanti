@@ -10,7 +10,7 @@ export function SiteBanner() {
       <div className="mx-auto flex max-w-6xl items-center justify-center gap-2 px-4 py-2 sm:px-6">
         <Megaphone className="size-4 shrink-0 text-gold sm:size-[1.15rem]" aria-hidden="true" />
         <p className="text-center text-[0.78rem] font-extrabold uppercase leading-snug tracking-wide sm:text-sm">
-          SITO IN COSTRUZIONE, INFO NON VALIDE
+          SITO IN COSTRUZIONE, INFO DA PRENDERE CON LE PINZE
         </p>
       </div>
     </div>
