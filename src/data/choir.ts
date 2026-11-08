@@ -89,7 +89,7 @@ export const voiceSections: VoiceSection[] = [
     id: "bassi",
     name: "Bassi e baritoni",
     description: "Il fondamento del coro: la base armonica su cui poggia tutto.",
-    members: ["Carlo Lagazzi", "Lucio Migliori", "Luigi Ropa", "Nome Cognome"],
+    members: ["Carlo Lagazzi", "Lucio Migliori", "Luigi Ropa"],
   },
 ];
 
