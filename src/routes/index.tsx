@@ -89,21 +89,23 @@ function HomePage() {
             </Link>
           </div>
           <figure className="relative">
-            <img
-              src={rehearsal}
-              alt="I coristi durante una prova attorno al pianoforte"
-              loading="lazy"
-              width={1280}
-              height={960}
-              className="w-full rounded-xl object-cover"
-            />
-            <figcaption className="mt-3 text-xs text-muted-foreground">
+            <div className="relative">
+              <img
+                src={rehearsal}
+                alt="I coristi durante una prova attorno al pianoforte"
+                loading="lazy"
+                width={1280}
+                height={960}
+                className="w-full rounded-xl object-cover"
+              />
+              <span
+                className="pointer-events-none absolute -bottom-3 -right-3 -z-10 hidden size-full rounded-xl border-2 border-gold/70 sm:block"
+                aria-hidden="true"
+              />
+            </div>
+            <figcaption className="mt-6 text-xs text-muted-foreground">
               Le prove settimanali del coro.
             </figcaption>
-            <span
-              className="pointer-events-none absolute -bottom-3 -right-3 -z-10 hidden size-full rounded-xl border-2 border-gold/70 sm:block"
-              aria-hidden="true"
-            />
           </figure>
         </div>
       </section>
