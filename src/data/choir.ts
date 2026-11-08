@@ -57,7 +57,7 @@ export const voiceSections: VoiceSection[] = [
     id: "soprani",
     name: "Soprani",
     description: "La voce più acuta del coro: porta la linea melodica principale.",
-    members: ["Claudia Collina", "Tosca Creda", "Nome Cognome", "Nome Cognome"],
+    members: ["Claudia Collina", "Tosca Creda", "Rossana Montanari", "Ornella Nozzi"],
   },
   {
     id: "contralti",
