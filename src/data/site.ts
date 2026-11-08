@@ -13,6 +13,11 @@ export const site = {
   email: "bacchelli.marco@gmail.com",
   phone: "+39 348 334 5369",
   address: 'Centro Culturale "Le Nonne": via Marconi 22, Savigno, Valsamoggia (Bo)',
+  president: {
+    name: "Tosca Creda",
+    role: "presidente",
+    address: "Piazzale San Donnino 16, 41058 Zocca (MO)",
+  },
   vatOrCf: "C.F. 00000000000",
   social: [
     { label: "Facebook", href: "https://facebook.com" },
