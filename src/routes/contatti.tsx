@@ -75,6 +75,17 @@ function ContattiPage() {
                   <span className="text-foreground">{site.address}</span>
                 </span>
               </li>
+              <li className="flex items-start gap-3">
+                <MapPin className="mt-0.5 size-5 shrink-0 text-primary" aria-hidden="true" />
+                <span>
+                  <span className="block text-xs uppercase tracking-wider text-muted-foreground">
+                    {site.president.role}
+                  </span>
+                  <span className="text-foreground">
+                    {site.president.name}: {site.president.address}
+                  </span>
+                </span>
+              </li>
             </ul>
 
             <h3 className="mt-12 text-xs font-extrabold uppercase tracking-wide text-primary">
