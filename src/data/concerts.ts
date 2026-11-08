@@ -85,8 +85,9 @@ export const pastConcerts: Concert[] = [
     title: "Concerto di Sant'Anna",
     venue: "Chiesa parrocchiale",
     city: "Zocca (MO)",
-    description: "Incontro tra cori del territorio con programma sacro e profano.",
-    guests: ["Coro ospite — da definire", "Coro ospite — da definire"],
+    description:
+      'Tradizionale concerto di Sant\'Anna insieme alla corale "SS. Pietro e Paolo" di Anzola dell\'Emilia (Bo). Direttrice: Angela Balboni. Organista: Simone Serra.',
+    guests: ["Li Briganti Cantanti"],
     image: church,
     imageAlt: "Interno di chiesa durante una rassegna corale",
   },
