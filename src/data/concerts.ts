@@ -31,8 +31,8 @@ export const upcomingConcerts: Concert[] = [
     date: "2026-09-12",
     time: "21.00",
     title: "Concerto di Natale",
-    venue: "Chiesa di Santa Maria Assunta",
-    city: "Savigno (BO)",
+    venue: "Chiesa di Sant'Apollinare di Castelletto di Serravalle (paese)",
+    city: "(BO)",
     description:
       "Programma di musica sacra e brani tradizionali natalizi. Ingresso ad offerta libera.",
     guests: ["Coro ospite — da definire"],
