@@ -1,5 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { Mail, MapPin, Phone } from "lucide-react";
+import { Mail, MapPin, Phone, User } from "lucide-react";
 import { useState } from "react";
 
 import rehearsal from "@/assets/rehearsal.jpg";
@@ -76,7 +76,7 @@ function ContattiPage() {
                 </span>
               </li>
               <li className="flex items-start gap-3">
-                <MapPin className="mt-0.5 size-5 shrink-0 text-primary" aria-hidden="true" />
+                <User className="mt-0.5 size-5 shrink-0 text-primary" aria-hidden="true" />
                 <span>
                   <span className="block text-xs uppercase tracking-wider text-muted-foreground">
                     {site.president.role}
