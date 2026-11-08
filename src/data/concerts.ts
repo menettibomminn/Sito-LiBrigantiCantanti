@@ -74,9 +74,8 @@ export const pastConcerts: Concert[] = [
     title: "Canti nel borgo",
     venue: "Chiesa Montetortore",
     city: "Casa Miro, Zocca (MO)",
-    description:
-      "Concerto all'aperto nell'ambito della festa del paese, con repertorio popolare e italiano.",
-    guests: ["Coro ospite — da definire"],
+    description: 'Concerto inserito nella Rassegna Musicale "Musica per un Restauro".',
+    guests: ["Li Briganti Cantanti"],
     image: "/assets/chiesa-montetortore.jpg",
     imageAlt: "La chiesa con la facciata a capanna e il campanile in pietra, affacciata sul prato",
   },
