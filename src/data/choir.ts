@@ -57,7 +57,7 @@ export const voiceSections: VoiceSection[] = [
     id: "soprani",
     name: "Soprani",
     description: "La voce più acuta del coro: porta la linea melodica principale.",
-    members: ["Claudia Collina", "Nome Cognome", "Nome Cognome", "Nome Cognome"],
+    members: ["Claudia Collina", "Tosca Creda", "Nome Cognome", "Nome Cognome"],
   },
   {
     id: "contralti",
@@ -75,7 +75,7 @@ export const voiceSections: VoiceSection[] = [
     id: "bassi",
     name: "Bassi e baritoni",
     description: "Il fondamento del coro: la base armonica su cui poggia tutto.",
-    members: ["Nome Cognome", "Nome Cognome", "Nome Cognome", "Nome Cognome"],
+    members: ["Carlo Lagazzi", "Nome Cognome", "Nome Cognome", "Nome Cognome"],
   },
 ];
 
